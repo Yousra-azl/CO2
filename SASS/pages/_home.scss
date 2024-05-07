@@ -2,6 +2,28 @@
     margin: 0;
     padding: 0;
 }
-@media screen and (max-width: 360x800 ){
-
+.image1{
+    width: 200px;
+}
+.button1:hover, .button2 :hover{
+    #019961
+}
+@media screen and (max-width: 360px ){
+    body {
+       display: flex;
+       flex-direction: column;
+    }
+    .image1 {
+        
+        float: left;
+        width: 250px;
+        margin-left: 110px;
+    }
+    p , h1, button {
+        text-align: justify;
+        margin: 5px;
+    }
+    .ou {
+        text-align: center;
+    }
 }
