@@ -2,6 +2,10 @@ body{
     margin: 0;
     padding: 0;
 }
+.navbar{
+    padding-left: 5%;
+    
+}
 .navbar__nav{
     display: flex;
     flex-flow: row nowrap;
@@ -11,11 +15,23 @@ body{
 .navbar__liste{
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
     gap: 2em;
+    list-style-type: none;
+    padding-left: 3%;
     
 }
-
 .navbar__liste__li{
     text-decoration: none;
     color: #79C258;
+    font-size: large;
+}
+.navbar__liste__li:visited{
+    text-decoration: underline;
+    color: #019961;
+  
+}
+.navbar__liste__li:hover{
+    text-decoration: underline;
+    color: #3DAD5C;
 }
