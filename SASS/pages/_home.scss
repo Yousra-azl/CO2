@@ -29,7 +29,7 @@ h1{
     flex-direction: row-reverse;
 }
 .presentation {
-    margin: 90px;
+    margin: 100px;
     display: flex;
     flex-direction: column;
 }
@@ -71,6 +71,9 @@ h1, p, button {
     .buttons {
         display: flex;
         flex-direction: column;
+    }
+    .button1{
+        width: 95%;
     }
     .ou{
         margin: 10px;
