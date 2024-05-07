@@ -19,10 +19,12 @@
 @import 'layout/header';
 @import 'layout/nav';
 @import 'layout/sidebar';
+@import 'layout/trouverunvelib';
 
 /*pages*/ 
 @import 'pages/contact';
 @import 'pages/home';
+@import 'modeemploi';
 
 /*themes*/ 
 @import 'themes/admin';

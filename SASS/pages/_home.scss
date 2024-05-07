@@ -3,13 +3,52 @@
     padding: 0;
 }
 .image1{
-    width: 200px;
+    width: 600px;
+    margin-left: 180px;
 }
-.button1:hover, .button2 :hover{
-    
+.button2:hover{
+    background-color: #019961;
+    color: white;
 }
+.button1:hover{
+    background-image:linear-gradient(to bottom right, #019961, #019961);
+    color: white;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #030303;
+}
+.corps{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.presentation {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+}
+h1, p, button {
+    margin: 20px;
+    word-spacing: 10px;
+    line-height: 1.5;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.ou{
+    text-align: center;
+    margin: 25px;
+}
+
 @media screen and (max-width: 360px ){
-    body {
+    .corps {
        display: flex;
        flex-direction: column;
     }
@@ -21,9 +60,22 @@
     }
     p , h1, button {
         text-align: justify;
-        margin: 5px;
+        margin: 10px;
     }
     .ou {
         text-align: center;
+    }
+    .presentation{
+        margin: 0;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .button1{
+        width: 95%;
+    }
+    .ou{
+        margin: 10px;
     }
 }
