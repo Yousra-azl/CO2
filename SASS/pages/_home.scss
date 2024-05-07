@@ -5,8 +5,22 @@
 .image1{
     width: 200px;
 }
-.button1:hover, .button2 :hover{
-    #019961
+.button2:hover{
+    background-color: #019961;
+    color: white;
+}
+.button1:hover{
+    background-image:linear-gradient(to bottom right, #019961, #019961);
+    color: white;
+}
+p{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
 }
 @media screen and (max-width: 360px ){
     body {
