@@ -1,0 +1,39 @@
+.navbar__burger{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: white;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+.navbar__burger a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+.navbar__burger a:hover{
+    color: aqua;
+}
+.navbar__burger ul{
+    left: 0;
+}
+.navbar__burger .fermeture{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+
+}
+.burger__icon span{
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
