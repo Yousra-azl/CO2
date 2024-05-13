@@ -1,0 +1,64 @@
+@media only screen and (min-device-width : 428px) and (max-device-width : 480px) {
+
+    .section-modeemploi, .section-modeemploi2 {
+        display: none;
+    }
+    
+    .section-modeemploi.active, .section-modeemploi2.active {
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .carousel-nav {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .caroussel-box-modeemploi{
+        width: 90%;
+    }
+    
+    .caroussel-modeemploi{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .prev, .next{
+        color: #73C262;
+        font-size: 2em;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .puces{
+        display: flex;
+        font-size: 20px;
+    }
+    
+    .container-modeemploi {
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .bloc{
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .smart{
+        display: block;
+    }
+    
+    .ordi{
+        display: none;
+    }
+    }
+    
