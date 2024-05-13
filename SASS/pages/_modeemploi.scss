@@ -53,10 +53,20 @@
     height: auto;
 }
 
+.smart{
+    display: none;
+}
+
 .ordi{
     display: block;
 }
 
-.smart{
-    display: none;
+@media only screen and (min-device-width : 428px) and (max-device-width : 480px) {
+    .smart{
+        display: block;
+    }
+
+    .ordi{
+        display: none;
+    }
 }
