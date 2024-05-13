@@ -38,7 +38,7 @@ let nbMinutes = Math.floor(resteTempsSansHeuresMs/ uneMinutesEnMs);
 let resteTempsSansMinutes = resteTempsSansHeuresMs - nbMinutes * uneMinutesEnMs;
 let nbSecondes = Math.floor(resteTempsSansMinutes / 1000);
 
-//texte html
+//texte décompte
 JoursEl.textContent = nbJours;
 HeuresEl.textContent = nbHeures;
 MinutesEl.textContent = nbMinutes;
@@ -54,3 +54,4 @@ if ( tempsRestantEnMs < 0) {
 let countDownInterval = setInterval(getCountdown, 1000)
 // initialisation
 getCountdown();
+

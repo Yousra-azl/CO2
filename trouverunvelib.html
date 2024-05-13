@@ -5,34 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trouver un velib</title>
 		<link rel="stylesheet" href="SASS/main.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap" rel="stylesheet">	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body id="bodyvelib">
    
+	<header class="navbar">
+        <nav class="navbar__nav">
+            <img src="images\logo.svg" alt="logo">
+            <ul class="navbar__liste">
+                <li><a href="#" class="navbar__liste__li" target="_blank">Accueil</a></li>
+                <li><a href="#" class="navbar__liste__li" target="_blank">Mode d'emploi</a></li>
+                <li><a href="trouverunvelib.html" class="navbar__liste__li" target="_blank">Trouver un velib</a></li>
+                <li><a href="#" class="navbar__liste__li" target="_blank">Calculateur</a></li>
+                <li><a href="#" class="navbar__liste__li" target="_blank">A propos</a></li>
+                <li><a href="#" class="navbar__liste__li" target="_blank">Contact</a></li>
+            </ul>
+            <div id="lanavbar__burger" class="navbar__burger">
+                <a id="fermebtn" href="#" class="fermeture">x</a>
+                <ul>
+                    <li><a href="#"></a>Accueil</li>
+                    <li><a href="#">Mode d'emploi</a></li>
+                    <li><a href="trouverunvelib.html">Trouver un velib</a></li>
+                    <li><a href="#">Calculateur</a></li>
+                    <li><a href="#"></a>A propos</li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <a href="#" id="ouverture">
+                <span class="burger__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+        </nav>
+    </header>
 	
     <div id="wrappervelib">
 		<div id="minuteurvelib">
 			<div class="boxvelib">
-				<div id="jvelib"></div>
+				<div id="jvelib" class="nombrevelib"></div>
 					<div class="joursvelib">Jours</div>
 				</div>
 					<div class="boxvelib">
-					<div id="hvelib"></div>
+					<div id="hvelib" class="nombrevelib"></div>
 						<div class="heuresvelib">Heures</div>
 					</div>
 					<div class="boxvelib">
-						<div id="mvelib"></div>
+						<div id="mvelib" class="nombrevelib"></div>
 							<div class="minutesvelib">Minutes</div>
 						</div>
 						<div class="boxvelib">
-							<div id="svelib"></div>
+							<div id="svelib" class="nombrevelib"></div>
 								<div class="secondesvelib">Secondes</div>
 							</div>
-							<div id="titlevelib"><h1>Coming Soon</h1></div>
-							<div id="paragraphevelib"><p>La fonctionnalité de recherche de vélib<br>
-							est en cours de développement.<br>
-						Elle arrivera le 1er septembre 2024</p></div>
 						</div>
 					</div>
+							<div id="titlevelib"><h1 class="Titlevelib">Coming Soon</h1></div>
+							<div id="paragraphevelib"><p class="Paragraphevelib">La fonctionnalité de recherche de vélib<br>
+							est en cours de développement.<br>
+						Elle arrivera le 1er septembre 2024</p>
+					</div>
+					
 <script src="trouverunvelib.js"></script>
 </body>
 </html>
