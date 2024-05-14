@@ -1,0 +1,59 @@
+@media only screen and (min-device-width : 428px){
+    .containercontact{
+        width: 90%;
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    form{
+        height: 20em;
+        
+        #mail{
+            width: 100%;
+            margin: 0px;
+            padding: 0;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row: 1;
+        }
+
+        #tel{
+            width: 100%;
+            margin: 0px;
+            padding: 0;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row: 2;
+        }
+
+        #prenom{
+            width: 100%;
+            margin: 0px;
+            padding: 0;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row: 3;
+
+        #nom{
+            width: 100%;
+            margin: 0px;
+            padding: 0;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row: 4;
+            }
+        }
+    }
+    
+    #message{
+        width: 100%;
+        margin: 0px;
+        padding: 0;
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        }
+}

@@ -1,4 +1,4 @@
-@media only screen and (min-device-width : 428px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 375px){
 
     .section-modeemploi, .section-modeemploi2 {
         display: none;
@@ -43,14 +43,20 @@
     .container-modeemploi {
         display: flex;
         justify-content: center;
-        height: 80vh;
         align-items: center;
         flex-direction: column;
+        height: 130vh;
     }
     
-    .bloc{
+    .blocmodeemploi{
         flex-direction: column;
         gap: 0;
+    }
+
+    .modeemploipuces{
+        margin: 0px;
+        color: #178B59;
+        font-size: 2em;
     }
     }
     

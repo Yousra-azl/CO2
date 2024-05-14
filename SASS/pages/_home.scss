@@ -1,81 +1,197 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.image1{
+
+.image1 {
+    display: block;
     width: 600px;
-    margin-left: 180px;
+    margin-left: 90px;
 }
-.button2:hover{
+.image2 {
+    display: none;
+}
+
+.button1 {
+    background-image: linear-gradient(to bottom right, #79C258, #019961);
+    color: white;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    width: 150px;
+    box-shadow: 2px 2px 10px #3DAD5C;
+    transition: background-image 0.2s linear;
+}
+
+.button2 {
+    background-color: white;
+    color: #019961;
+    border-radius: 25px;
+    border: 2px solid #019961;
+    cursor: pointer;
+    height: 50px;
+    font-size: 17px;
+    padding: 5px;
+    text-align: center;
+    width: 150px;
+    transition: background-color 0.4s ease;
+}
+
+.button2:hover {
     background-color: #019961;
     color: white;
+    box-shadow: 2px 2px 10px #3DAD5C;
+
 }
-.button1:hover{
-    background-image:linear-gradient(to bottom right, #019961, #019961);
+
+.button1:hover {
+    background-image: linear-gradient(to bottom right, #019961, #019961);
     color: white;
+    transition: 0.2s;
 }
-p{
+
+p {
     font-family: "Roboto", sans-serif;
     font-size: 18px;
 }
-h1{
+
+h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 35px;
     font-weight: 600;
-    color: #030303;
+    color: #362e2e;
 }
-.corps{
+
+.corps {
     display: flex;
     flex-direction: row-reverse;
 }
+
 .presentation {
-    margin: 100px;
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
+    margin-left: 50px;
 }
-h1, p, button {
+
+h1,
+p,
+button {
     margin: 20px;
     word-spacing: 10px;
     line-height: 1.5;
 }
-.buttons{
+
+.buttons {
     display: flex;
     flex-direction: row;
 }
-.ou{
+
+.ou {
     text-align: center;
     margin: 25px;
+    font-size: 15px;
+    padding-top: 9px;
 }
 
-@media screen and (max-width: 360px ){
+@media screen and (max-width: 360px) {
     .corps {
-       display: flex;
-       flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
+
     .image1 {
-        
+
         float: left;
         width: 250px;
         margin-left: 110px;
     }
-    p , h1, button {
+
+    p,
+    h1,
+    button {
         text-align: justify;
         margin: 10px;
     }
+
     .ou {
         text-align: center;
-    }
-    .presentation{
         margin: 0;
     }
+
+    .presentation {
+        margin: 0;
+    }
+
     .buttons {
         display: flex;
         flex-direction: column;
     }
-    .button1{
+
+    .button1,
+    .button2 {
         width: 95%;
     }
-    .ou{
+
+    h1 {
+        font-size: 25px;
+    }
+   
+}
+
+@media screen and (min-width: 361px) and (max-width: 768px) {
+    .corps {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image1 {
+        display: none;
+      
+    }
+    .image2 {
+        display: block;
+        float: left;
+        width: 300px;
+        margin-left: 230px;
+        border-radius: 50%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    p,
+    h1,
+    button {
+        text-align: justify;
+        margin: 10px;
+        margin-bottom: 30px;
+    }
+
+    .ou {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .presentation {
+        margin: 0;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ou {
         margin: 10px;
     }
+
+    h1 {
+        font-size: 25px;
+    }
 }
+
+@media screen and (min-width: 1920px) {}

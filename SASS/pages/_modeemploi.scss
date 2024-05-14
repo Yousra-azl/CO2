@@ -1,8 +1,9 @@
 .container-modeemploi{
     display: flex;
     justify-content: center;
-    height: 80vh;
+    height: 90vh;
     align-items: center;
+    color: #030303;
 }
 
 .box-modeemploi{
@@ -61,12 +62,23 @@
     display: block;
 }
 
-@media only screen and (min-device-width : 428px) and (max-device-width : 480px) {
+@media only screen and (min-width : 375px){
     .smart{
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 
     .ordi{
         display: none;
+    }
+}
+
+@media only screen and (min-width : 1920px){
+    .smart{
+        display: none;
+    }
+
+    .ordi{
+        display: block;
     }
 }
