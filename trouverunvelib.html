@@ -14,23 +14,48 @@
 </head>
 <body id="bodyvelib">
    
-	<header>
-        <nav class="navbar">
-          <img src="images\logo.svg" alt="logoco2" class="logo">
-          <div class="nav-links">
-            <ul>
-              <li><a href="#">Accueil</a></li>
-              <li><a href="#"></a>Mode d'emploi</li>
-              <li><a href="#"></a>Trouver un velib</li>
-              <li><a href="#"></a>Calculateur</li>
-              <li><a href="#">A propos</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <img src="images\lines_menu_burger_icon_123889.png" alt="bouton burger" class="menu-burger">
-  
-        </nav>
-      </header>
+	<aside class="asideacc">
+		<nav>
+			
+			<img src="images\logo.svg" alt="logo" class="logo">
+			<ul class="asideacc__liens">
+				<li><a href="index.html" class="asideacc__liens__lien">ACCUEIL</a></li>
+				<li><a href="modeemploi.html" class="asideacc__liens__lien">Mode d'emploi</a></li>
+				<li><a href="trouverunvelib.html" class="asideacc__liens__lien">Trouver un velib</a></li>
+				<li><a href="#" class="asideacc__liens__lien">Calculateur</a></li>
+				<li><a href="#" class="asideacc__liens__lien">A propos</a></li>
+				<li><a href="#" class="asideacc__liens__lien">Contact</a></li>
+				
+			</ul>
+	
+			<div id="mySidenav" class="sidenav">
+				<a id="closeBtn" href="#" class="close">×</a>
+				
+				<ul>
+					<li><a href="accueil.html">ACCUEIL</a></li>
+					<li><a href="#">Mode d'emploi</a></li>
+					<li><a href="chambre.html">Trouver un velib</a></li>
+					<li><a href="#">Calculateur</a></li>
+					<li><a href="#">A propos</a></li>
+					<li><a href="#">Contact</a></li>
+				   
+				</ul>
+			</div>
+			<a href="#" id="openBtn" class="burger__icon">
+				<span class="burger-icon">
+					<span class="color"></span>
+					<span class="color"></span>
+					<span class="color"></span>
+				</span>
+			</a>
+	
+	
+			
+		</nav>
+	
+	
+	
+	</aside>
 	
     <div id="wrappervelib">
 		<div id="minuteurvelib">
@@ -57,8 +82,8 @@
 							est en cours de développement.<br>
 						Elle arrivera le 1er septembre 2024</p>
 					</div>
-					
-<script src="trouverunvelib.js"></script>
+<script src="caroussel.js"></script>					
+<script src="trouverunvelib.html"></script>
 <script src="boutonburger.js"></script>
 </body>
 </html>
