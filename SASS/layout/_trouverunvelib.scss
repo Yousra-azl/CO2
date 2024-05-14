@@ -4,21 +4,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 18%;
+    padding: 15%;
 }
 
 #minuteurvelib {
     display: grid;
-    grid-template-columns: repeat(4, 35%);
-    gap: 5%;
+    grid-template-columns: repeat(4, 38%);
+    gap: 2%;
     margin: -15% auto;
     margin-top: 15%;
-    padding-right: 30%;
+    padding-right: 40%;
 }
 .boxvelib {
     margin-top: 250%;
-    height: 37%;
-    width: 95%;
+    height: 30%;
+    width: 90%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -27,17 +27,14 @@
     color: #ffffff;
 }
 .boxvelib > div:first-child {
-    font-size: 30px;
+    font-size: 250%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex: 0.7;
     padding: 1%;
 }
-.nombrevelib {
-    font-weight: bold;
 
-}
 
 .joursvelib, .heuresvelib, .minutesvelib, .secondesvelib {
     padding: 1px;
@@ -54,7 +51,7 @@
     text-align: center;
 
 }
-.Paragraphevelib, .nombrevelib {
+.Paragraphevelib {
     font-family: "Roboto", sans-serif;
   font-weight: 350;
   font-style: normal;
