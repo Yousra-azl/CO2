@@ -97,7 +97,7 @@ button {
     font-size: 15px;
     padding-top: 9px;
 }
-
+// Début affichage téléphone 
 @media screen and (max-width: 360px) {
     .corps {
         display: flex;
@@ -142,7 +142,9 @@ button {
     }
    
 }
+// Fin affichage téléphone 
 
+// début affichage tablette 
 @media screen and (min-width: 361px) and (max-width: 768px) {
     .corps {
         display: flex;
@@ -193,5 +195,4 @@ button {
         font-size: 25px;
     }
 }
-
-@media screen and (min-width: 1920px) {}
+// Fin affichage tablette 
