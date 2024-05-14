@@ -1,0 +1,17 @@
+
+.footer__liens{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    gap: 2em;
+    list-style: none;
+    padding-right: 1em;
+    border-top: 0.1em solid #eeeeee;
+    padding-top: 3%;
+    
+}
+.footer__liens__lien{
+    text-decoration: none;
+    color: #3DAD5C;
+    
+}

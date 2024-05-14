@@ -9,11 +9,11 @@
   justify-content:flex-start;
 }
 .asideacc a{
-  color: #3DAD5C;
+  color: #019961;
 }
 .asideacc a:hover{
   text-decoration: underline;
-  color: #019961;
+  color: #3DAD5C;
 }
 /* Sidenav menu */
 .sidenav {
@@ -39,52 +39,61 @@
   transition: 0.3s;
   text-align: center;
 }
+.sidenav ul li {
+  border-bottom:  0.1em solid #3DAD5C;
+}
 .sidenav ul li a{
-  border-bottom: 0.1em solid green;
+  padding-top: 10%;
 }
 
 .sidenav a:hover {
-  color: #111;
+  color:#019961;
+  text-decoration: none;
 }
 
 .sidenav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  width: 90%;
+  margin-top: 20%;
 }
 
 /* Active class */
 .sidenav.active {
   left: 0;
+ display: flex;
+ justify-content: space-around;
 }
 
 /* Close btn */
 .sidenav .close {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 20px;
   font-size: 36px;
 }
+
 
 /* Icône burger */
 .burger-icon span {
   display: block;
-  width: 35px;
-  height: 5px;
-  background-color:green;
+  width: 25px;
+  height: 3px;
+  background-color:#3DAD5C;
   margin: 6px 0;
 }
 
 /*nav*/
 .logo{
-  width: 15%;
+  width: 10%;
 }
 .asideacc{
  
   display: flex;
   flex-flow: row nowrap;
   justify-content:flex-start;
-  border-bottom: 0.1em solid grey;
+  border-bottom: 0.1em solid #eeeeee;
 }
 nav{
   display: flex;
@@ -119,8 +128,8 @@ nav{
   .burger__icon{
     display: block;
     position: fixed;
-    left: 90%;
-    bottom: 94%;
+    left: 93%;
+    bottom: 94.4%;
   }
   .logo{
     width:30%;

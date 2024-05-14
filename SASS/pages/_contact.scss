@@ -1,0 +1,30 @@
+.contact__titre{
+    text-align: center;
+}
+form{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.prenom{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.nom{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.etatcivil{
+    display: flex;
+
+}
+.email{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.tel{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.infocontact{
+    display: flex;
+}
