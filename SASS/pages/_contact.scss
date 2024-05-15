@@ -6,6 +6,7 @@
 form{
     padding-left: 30%;
     padding-right: 30%;
+   
 }
 fieldset{
     border-top: 0.1em solid white;
@@ -13,8 +14,9 @@ fieldset{
     border-left: 0.1em solid white;
     border-right: 0.1em solid white;
     margin-bottom: 10%;
-    box-shadow: 0px -1px 10px   black;
+    box-shadow: 0px -1px 10px   rgb(221, 220, 220);
     border-radius: 2%;
+    background-color: white;
     
 }
 .prenom{
@@ -77,9 +79,12 @@ fieldset{
 .info{
     display: flex;
     flex-flow: column nowrap;
-    width: 76%;
-    padding-left: 9%;
-    padding-right: 9%;
+    width: 72.5%;
+    padding-left: 11.4%;
+    
+}
+#message{
+    padding-top: 3%;
 }
 textarea{
     color: #eeeeee;
@@ -91,16 +96,76 @@ textarea{
     display: flex;
     justify-content: flex-end;
     padding-top: 1%;
+    padding-right: 10.5%;
     
     
 }
 #envoie{
-    width: 13%;
+    width: 15%;
     background: linear-gradient(#B5D653,#019961) ;
     color: white;
     border-radius: 44px 45px 53px 60px / 40px 43px 44px 45px;
+    border-color: rgb(255, 255, 255);
     padding-top: 1%;
     padding-bottom: 1%;
-    
-    
 }
+.fougere{
+    width: 13%;
+    z-index: -1;
+    position: absolute;
+    left: 22%;
+    top: 15%;
+}
+.algue{
+    width: 13%;
+    z-index: -1;
+    position: absolute;
+    top: 35%;
+    left: 19.1%;
+    transform: rotate(-10deg);
+}
+.plante{
+    width: 13%;
+    z-index: -1;
+    position: absolute;
+    right: 21.5%;
+    top: 35%;
+}
+.ronds{
+    
+    grid-column: 7/9;
+    grid-row: 1/2;
+    width: 13%;
+    margin-top: 300px;
+}
+.rond1{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 1em solid #79C258;
+    margin-left: 400px ;
+    position: absolute;
+    top: 11%;
+    right: 21%;
+}
+.rond2{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    border: 1.2em solid #019961;
+    position: absolute;
+    top: 15%;
+    right: 25%;
+}
+.rond3{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: 1.2em solid #B5D653;
+    margin-left: 500px ;
+    margin-top: -350px;
+    position: absolute;
+    top: 60%;
+    right: 20.5%;
+}
+
