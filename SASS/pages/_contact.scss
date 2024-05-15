@@ -68,6 +68,7 @@ fieldset{
     border: none;
     border-bottom: 0.1em solid #eeeeee;
     padding-top: 10%;
+    
 }
 .tel ::placeholder{
     color: #eeeeee;
@@ -167,5 +168,106 @@ textarea{
     position: absolute;
     top: 60%;
     right: 20.5%;
+}
+.prenom__tel{
+    display: none;
+}
+.nom__tel{
+    display: none;
+}
+.button__mobile{
+    display: none;
+}
+@media screen and (min-width: 300px) and (max-width: 400px){
+ 
+
+    .contact__titre{
+        text-align: start;
+        padding-top: 30%;
+        padding-left: 3%;
+        padding-bottom: 3%;
+    }
+    form{
+        position: absolute;
+        height: 30%;
+        padding: 0;
+        left: 2%;
+        
+    }
+    .prenom__tel{
+        display: block;
+    
+    }
+    #email{
+        padding-top: 2%;
+    }
+    #tel{
+        padding-top: 2%;
+    }
+    #nom{
+        padding-top: 2%;
+    }
+    #prenom{
+        padding-top: 2%;
+    }
+    .nom__tel{
+        display: block;
+    }
+    .grid{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .etatcivil{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .prenom{
+        display: flex;
+        flex-flow: column nowrap;
+        order: 1;
+    }
+    .infocontact{
+        display: flex;
+        flex-flow: column nowrap;
+        order: -1;
+    }
+    .info{
+        padding: 0;
+    }
+    #envoye{
+        font-size: 120%;
+        width: 80%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    background: linear-gradient(#B5D653,#019961) ;
+    color: white;
+    border-radius: 44px 45px 53px 60px / 40px 43px 44px 45px;
+    border-color: rgb(255, 255, 255);
+   
+    }
+    .button__mobile{
+        display: block;
+        display: flex;
+        justify-content: center;
+        padding-top: 1%;
+        padding-right: 10.5%;
+    }
+    .button{
+        display: none;
+    }
+ 
+    .ronds{
+        display: none;
+    }
+    .fougere{
+        display: none;
+    }
+    .plante{
+        display: none;
+    }
+    .algue{
+        display: none;
+    }
+   
 }
 
