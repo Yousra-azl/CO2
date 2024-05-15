@@ -54,13 +54,14 @@
         <h1 class="contact__titre">Contactez-nous</h1>
         <form>
           <fieldset>
+            <div class="grid">
             <div class="etatcivil">
               <p class="prenom">
-                <label for="prenom">Prénom</label>
+                <label for="prenom"><span class="prenom__tel">Votre</span>Prénom</label>
                 <input type="text" id="prenom" placeholder="Prénom">
               </p>
               <p class="nom">
-                <label for="nom">Nom</label>
+                <label for="nom"><span class="nom__tel">Votre</span>Nom</label>
                 <input type="text" id="nom" placeholder="Nom">
               </p>
             </div>
@@ -78,11 +79,17 @@
               <label for="message">Votre message</label>
               <textarea name="info" id="message">Message</textarea>
             </p>
-              <label for="envoie"></label>
+             
             
             <p class="button">
+              <label for="envoie"></label>
               <input type="button" id="envoie" value="Commencer">
             </p>
+            <p class="button__mobile">
+              <label for="envoye"></label>
+              <input type="button" id="envoye" value="Envoyer">
+            </p>
+            </div>
         </fieldset>
         
           <img class="fougere" src="images/groupe2.svg" alt="">
@@ -102,13 +109,14 @@
 
 <footer>
   <div class="footer">
+    <div class="copyrightsmart">Copyright 2022 CO2WEB. <br> All rights reserved.</div>
     <ul class="footer__liens">
       <li><a href="index.html" class="footer__liens__lien">Accueil</a></li>
-      <li><a href="modeemploi.html" class="footer__liens__lien">Mode d'emploi</a></li>
+      <li><a href="modeemploi.html" class="footer__liens__lien" id="footer__modedemploi">Mode d'emploi</a></li>
       <li><a href="trouverunvelib.html" class="footer__liens__lien">Trouver un velib</a></li>
       <li><a href="#" class="footer__liens__lien">Calculateur</a></li>
       <li><a href="#" class="footer__liens__lien">A propos</a></li>
-      <li><a href="contact.html" class="footer__liens__lien">Contact</a></li>
+      <li><a href="contact.html" class="footer__liens__lien" id="footer__contact">Contact</a></li>
     </ul>
   </div>
 </footer>

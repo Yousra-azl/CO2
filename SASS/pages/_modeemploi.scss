@@ -4,6 +4,7 @@
     height: 74vh;
     align-items: center;
     color: #030303;
+    height: 107vh;
 }
 
 .box-modeemploi{
@@ -54,21 +55,42 @@
     height: auto;
 }
 
-.smart{
-    display: none;
-}
-
-.ordi{
-    display: block;
-}
-
-@media only screen and (min-device-width : 428px){
+@media only screen and (min-width : 360px) and (max-width : 759px){
     .smart{
         display: flex;
         justify-content: center;
     }
+}
+
+@media only screen and (min-width : 1920px){
+    .smart{
+        display: none;
+    }
 
     .ordi{
+        display: block;
+    }
+}
+
+@media only screen and (min-width : 768px){
+    .bloc{
+        display: flex;
+        background-size: auto;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5em;
+    }
+
+    .smart{
         display: none;
+    }
+
+    .container-modeemploi{
+        display: flex;
+        justify-content: center;
+        height: 74vh;
+        align-items: center;
+        color: #030303;
+        height: 178vh;
     }
 }
