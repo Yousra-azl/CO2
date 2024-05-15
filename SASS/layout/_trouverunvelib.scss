@@ -1,24 +1,24 @@
 
-#wrappervelib {
+.content-wrappervelib {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 14%;
+    padding: 10% 5%;
+    min-height: 3vh; /* Modification pour couvrir la hauteur de l'écran */
 }
 
+/* Styles pour le minuteur */
 #minuteurvelib {
     display: grid;
-    grid-template-columns: repeat(4, 38%);
-    gap: 2%;
-    margin: -9% auto;
-    margin-top: 15%;
-    padding-right: 40%;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 3%;
+    margin-top: 5%;
 }
+
 .boxvelib {
-    margin-top: 250%;
-    height: 30%;
-    width: 90%;
+    height: 9vh; 
+    width: 100%; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -26,41 +26,66 @@
     background-color: #019961;
     color: #ffffff;
 }
-.boxvelib > div:first-child {
-    font-size: 250%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex: 0.7;
-    padding: -7%;
-}
 
+.boxvelib > div:first-child {
+    font-size: 2.5em; 
+    padding: 1%;
+}
 
 .joursvelib, .heuresvelib, .minutesvelib, .secondesvelib {
-    padding: 1px;
-    color: #ffffff;
     font-size: 10px;
-    font-weight: bold;
 }
+
 .Titlevelib {
-    font-size: 270%;
+    font-size: 2.3em; 
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 50;
+    font-weight: 500; 
     font-style: normal;
     text-align: center;
-
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
+
 .Paragraphevelib {
     font-family: "Roboto", sans-serif;
-  font-weight: 350;
-  font-style: normal;
-  font-size: 100%;
-  text-align: center;
-margin-top: 5%;
+    font-weight: 300; 
+    font-style: normal;
+    font-size: 1em; 
+    text-align: center;
+    margin-top: 1%;
+}
+
+/* Mobile paysage et portrait */
+@media screen and (max-width: 800px) {
+    .content-wrappervelib {
+        padding: 15% 5%; 
+    }
+
+    #minuteurvelib {
+        grid-template-columns: repeat(4, 1fr); 
+        margin-top: 20vh;
+    }
+    .boxvelib {
+        width: 100%;
+        
+    }
 }
 
 
+/* Tablettes portrait */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Tablettes paysage */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+
+}
+
+/* Desktops */
+@media screen and (min-width: 1367px) {
+   
+}
 
 
 
