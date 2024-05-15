@@ -3,11 +3,14 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
+   font-size: 120%;
     gap: 2em;
     list-style: none;
     padding-right: 1em;
-    border-top: 0.1em solid #eeeeee;
-    padding-top: 3%;
+    border-top: 0.1em solid #79C258;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 13%;
     
 }
 .footer__liens__lien{

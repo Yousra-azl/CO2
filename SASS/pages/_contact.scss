@@ -1,30 +1,106 @@
 .contact__titre{
     text-align: center;
+    font-weight: bold;
+    padding-top: 3%;
 }
 form{
     padding-left: 30%;
     padding-right: 30%;
 }
+fieldset{
+    border-top: 0.1em solid white;
+    border-bottom: 0.1em solid white;
+    border-left: 0.1em solid white;
+    border-right: 0.1em solid white;
+    margin-bottom: 10%;
+    box-shadow: 0px -1px 10px   black;
+    border-radius: 2%;
+    
+}
 .prenom{
     display: flex;
     flex-flow: column nowrap;
+}
+#prenom{
+    border: none;
+    border-bottom: 0.1em solid #eeeeee;
+    padding-top: 10%;
+}
+.prenom ::placeholder{
+    color: #eeeeee;
 }
 .nom{
     display: flex;
     flex-flow: column nowrap;
 }
+#nom{
+    border: none;
+    border-bottom: 0.1em solid #eeeeee;
+    padding-top: 10%;
+}
+.nom ::placeholder{
+    color: #eeeeee;
+}
 .etatcivil{
     display: flex;
+    justify-content: space-around;
 
 }
 .email{
     display: flex;
     flex-flow: column nowrap;
 }
+#email{
+    border: none;
+    border-bottom: 0.1em solid #eeeeee;
+    padding-top: 10%;
+}
+.email ::placeholder{
+    color: #eeeeee;
+}
 .tel{
     display: flex;
     flex-flow: column nowrap;
 }
+#tel{
+    border: none;
+    border-bottom: 0.1em solid #eeeeee;
+    padding-top: 10%;
+}
+.tel ::placeholder{
+    color: #eeeeee;
+}
 .infocontact{
     display: flex;
+    justify-content: space-around;
+}
+.info{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 76%;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+textarea{
+    color: #eeeeee;
+    border: none;
+    border-bottom: 0.1em solid #eeeeee;
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1%;
+    
+    
+}
+#envoie{
+    width: 13%;
+    background: linear-gradient(#B5D653,#019961) ;
+    color: white;
+    border-radius: 44px 45px 53px 60px / 40px 43px 44px 45px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    
+    
 }
