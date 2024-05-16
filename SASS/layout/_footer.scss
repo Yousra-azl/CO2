@@ -1,8 +1,5 @@
 footer{
-    border-top: 0.1em solid #79C258;
-  
-    
-   
+    border-top: 0.1em solid #79C258; 
 }
 .footer__liens{
     display: flex;
@@ -12,12 +9,9 @@ footer{
     gap: 2em;
     list-style: none;
     padding-right: 1em;
-    padding-top: 1%;
-    
-  
-    
-    
+    padding-top: 1%;  
 }
+
 .footer__liens__lien{
     text-decoration: none;
     color: #3DAD5C;
