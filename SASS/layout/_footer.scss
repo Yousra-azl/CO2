@@ -1,5 +1,9 @@
-footer{
-    border-top: 0.1em solid #79C258; 
+.footer{
+    border-top: 0.1em solid #79C258;
+}
+footer .footer{
+    position: absolute;
+    top: 93%;
 }
 .footer__liens{
     display: flex;
