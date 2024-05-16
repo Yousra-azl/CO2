@@ -133,7 +133,7 @@ nav{
   .burger__icon{
     display: block;
     position: fixed;
-    left: 72%;
+    left: 60%;
     bottom: 94.4%;
   }
   .logo{
@@ -141,12 +141,14 @@ nav{
     z-index:2;
     position: fixed;
     top: 2%;
+    right: 75%;
   }
   .sidenav{
-    width: 85%;
+    width: 70%;
   }
   .sidenav .close{
-    right: 8%;
+    right: 5%;
+    top: 1%;
   }
  
   
