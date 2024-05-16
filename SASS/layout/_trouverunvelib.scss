@@ -1,13 +1,18 @@
+.footer {
 
+        position: fixed;
+        top: 70%;
+        bottom: 0%;
+        width: 100%;    
+}
 .content-wrappervelib {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10% 5%;
-    min-height: 3vh; /* Modification pour couvrir la hauteur de l'écran */
+    min-height: 3vh; 
 }
-
 /* Styles pour le minuteur */
 #minuteurvelib {
     display: grid;

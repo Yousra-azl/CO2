@@ -1,5 +1,9 @@
-footer{
+.footer{
     border-top: 0.1em solid #79C258;
+}
+footer .footer{
+    position: absolute;
+    top: 93%;
 }
 .footer__liens{
     display: flex;
@@ -9,12 +13,9 @@ footer{
     gap: 2em;
     list-style: none;
     padding-right: 1em;
- 
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-top: 13%;
-    
+    padding-top: 1%;  
 }
+
 .footer__liens__lien{
     text-decoration: none;
     color: #3DAD5C;
@@ -29,9 +30,9 @@ footer{
     list-style: none;
     padding-right: 1em;
     border-top: 0.1em solid #79C258;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-top: 13%;
+    
+    
+   
 
 }
 .footerlienslien{
@@ -40,7 +41,7 @@ footer{
 }
 
 .copyrightsmart{
-    display: none;
+   display: none;
 }
 
 @media screen and (min-width: 300px) and (max-width: 400px){
@@ -69,18 +70,20 @@ footer{
     
 }
 .copyrightsmart{
-    display: block;
+   display:block;
     font-size: 120%;
     padding-bottom: 1em;
 }
 #footer__modedemploi{
     position: absolute;
-    right: 41%;
+    right: 50%;
     top: 50%;
+    
 }
 #footer__contact{
     position: absolute;
-    right: 55%;
+    right: 63%;
     top: 85%;
+    
 }
 }
