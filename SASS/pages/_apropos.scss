@@ -1,42 +1,141 @@
+.corps{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 10vh;
+}
+.representation{
+    margin-top: 5vh;
+}
 .rectangle{
     position: absolute;
-    width: 40%;
-    height: 40vh;
+    width: 30%;
+    height: 250px;
     background-image: linear-gradient(to bottom right, #B5D653,  #019961);
     z-index: 1;
     border-top-right-radius: 300px;
     border-bottom-right-radius: 300px ;
-    margin-top: 25vh;
+    
 }
 .groupe3{
     position: absolute;
     z-index: 2;
-    width: 28%;
-    margin-top: 13vh;
-    margin-left: 140px;
+    width: 24%;
+    margin-top: -6vh;
+    margin-left: 70px;
 }
 .pc{
     position: relative;
     z-index: 3;
     width: 45%;
-    margin-left: 220px;
-    margin-top: 38vh;
-}
-.corps{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+    margin-left: 140px;
+    margin-top: 7vh;
 }
 
+
 .projet{
-    width: 50%;
-    margin-top: 15vh;
+    width: 60%;
+    margin-right: 200px;
 }
 .trait{
     width: 300px;
     height: 5px;
     background-image: linear-gradient(to bottom right, #B5D653,  #019961);
+    margin-left: 20px;
 }
 h5{
     font-size: 50px;
+    color: #362e2e;
+}
+.cercle4{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #79C258 ;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.titre5{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 1366px ) {
+    .rectangle{
+        width: 40%;
+        height: 230px;
+    }
+    .pc{
+        width: 50%;
+        margin-top: 8vh;
+    }
+    .groupe3{
+        width: 30%;
+    }
+    .representation {
+        margin-top: 7vh;
+    }
+    .corps{
+        margin-top: 10vh;
+    }
+}
+@media screen and  (max-width: 768px) {
+    .corps {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vh;
+      }
+    .projet {
+        width: 90%;
+        margin-left: 50px;
+        margin-right: 100px;
+      }
+      .rectangle{
+        width: 80%;
+        height: 250px;
+    }
+    .groupe3{
+        width: 60%;
+        margin-top: -6vh;
+        margin-left: 70px;
+    }
+    .pc{
+        margin-top: 6vh;
+    }
+    .projet p{
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .projet {
+        margin-left: 10px;
+      }
+      .rectangle{
+        height: 150px;
+    }
+    .groupe3{
+        width: 63%;
+        margin-top: -25px;
+        margin-left: 10px;
+    }
+    .pc{
+        margin-top: 5vh;
+        margin-left: 40px;
+    }
+    .projet p{
+        font-size: 13px;
+    }
+    .titre5{
+        display: none;
+    }
+    .trait{
+        width: 130px;
+        height: 2px;
+        margin-left: 10px;
+    }
+    p{
+       color: #362e2e;
+    }
+    .trait p{
+        display: none;
+    }
 }
