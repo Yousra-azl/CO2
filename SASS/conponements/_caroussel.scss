@@ -1,4 +1,4 @@
-@media only screen and (max-width : 360px) {
+@media only screen and (max-width : 767px){
 
     .section-modeemploi,
     .section-modeemploi2 {
@@ -15,8 +15,6 @@
 
     .carousel-nav {
         text-align: center;
-        display: flex;
-        justify-content: space-between;
     }
 
     .caroussel-box-modeemploi {
@@ -29,13 +27,22 @@
         justify-content: center;
     }
 
-    .prev,
-    .next {
+    .prev{
         color: #73C262;
         font-size: 2em;
         font-weight: bold;
         background-color: transparent;
         border: none;
+        float: left;
+    }
+
+    .next{
+        color: #73C262;
+        font-size: 2em;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        float: right;
     }
 
     .puces {
@@ -60,5 +67,11 @@
         margin: 0px;
         color: #178B59;
         font-size: 1.5em;
+    }
+
+    .smartcaroussel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

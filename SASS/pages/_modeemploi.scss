@@ -1,7 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 .container-modeemploi{
     display: flex;
     justify-content: center;
@@ -58,8 +54,8 @@
     height: auto;
 }
 
-@media only screen and (min-width : 360px){
-    .smart{
+@media only screen and (min-width : 360px) and (max-width: 767){
+    .smartcaroussel{
         display: flex;
         justify-content: center;
     }
@@ -70,11 +66,11 @@
         display: flex;
         background-size: auto;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
         gap: 5em;
     }
 
-    .smart{
+    .smartcaroussel{
         display: none;
     }
 
@@ -83,13 +79,13 @@
         justify-content: center;
         align-items: center;
         color: #030303;
-        height: 210vh;
+        height: 120vh;
     }
 }
 
 @media only screen and (min-width : 1366px){
 
-    .smart{
+    .smartcaroussel{
         display: none;
     }
 
@@ -98,7 +94,7 @@
         justify-content: center;
         align-items: center;
         color: #030303;
-        height: 200vh;
+        height: 74vh;
     }
 
     .ordi{
@@ -109,7 +105,7 @@
 }
 
 @media only screen and (min-width : 1920px){
-    .smart{
+    .smartcaroussel{
         display: none;
     }
 
