@@ -5,7 +5,6 @@
 .container-modeemploi{
     display: flex;
     justify-content: center;
-    height: 74vh;
     align-items: center;
     color: #030303;
     height: 107vh;
@@ -59,20 +58,10 @@
     height: auto;
 }
 
-@media only screen and (min-width : 360px) and (max-width : 759px){
+@media only screen and (min-width : 360px){
     .smart{
         display: flex;
         justify-content: center;
-    }
-}
-
-@media only screen and (min-width : 1920px){
-    .smart{
-        display: none;
-    }
-
-    .ordi{
-        display: block;
     }
 }
 
@@ -92,9 +81,43 @@
     .container-modeemploi{
         display: flex;
         justify-content: center;
-        height: 74vh;
         align-items: center;
         color: #030303;
-        height: 178vh;
+        height: 210vh;
+    }
+}
+
+@media only screen and (min-width : 1366px){
+
+    .smart{
+        display: none;
+    }
+
+    .container-modeemploi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #030303;
+        height: 200vh;
+    }
+
+    .ordi{
+        background-image: url(../images/bulles.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+@media only screen and (min-width : 1920px){
+    .smart{
+        display: none;
+    }
+
+    .ordi{
+        display: block;
+    }
+
+    .container-modeemploi{
+        height: 199vh;
     }
 }
