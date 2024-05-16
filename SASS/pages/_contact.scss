@@ -1,29 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .contact__titre{
     text-align: center;
     font-weight: bold;
-    padding-top: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 form{
     padding-left: 30%;
     padding-right: 30%;
    
+    
+    
 }
 fieldset{
     border-top: 0.1em solid white;
     border-bottom: 0.1em solid white;
     border-left: 0.1em solid white;
     border-right: 0.1em solid white;
-    margin-bottom: 10%;
     box-shadow: 0px -1px 10px   rgb(221, 220, 220);
     border-radius: 2%;
     background-color: white;
+    
+    
     
 }
 .prenom{
     display: flex;
     flex-flow: column nowrap;
+    font-size: 120%;
 }
 #prenom{
+    font-size: 100%;
     border: none;
     border-bottom: 0.1em solid #eeeeee;
     padding-top: 10%;
@@ -34,11 +44,13 @@ fieldset{
 .nom{
     display: flex;
     flex-flow: column nowrap;
+    font-size: 120%;
 }
 #nom{
     border: none;
     border-bottom: 0.1em solid #eeeeee;
     padding-top: 10%;
+    font-size: 100%;
 }
 .nom ::placeholder{
     color: #eeeeee;
@@ -51,11 +63,13 @@ fieldset{
 .email{
     display: flex;
     flex-flow: column nowrap;
+    font-size: 120%;
 }
 #email{
     border: none;
     border-bottom: 0.1em solid #eeeeee;
     padding-top: 10%;
+    font-size: 100%;
 }
 .email ::placeholder{
     color: #eeeeee;
@@ -63,11 +77,13 @@ fieldset{
 .tel{
     display: flex;
     flex-flow: column nowrap;
+    font-size: 120%;
 }
 #tel{
     border: none;
     border-bottom: 0.1em solid #eeeeee;
     padding-top: 10%;
+    font-size: 100%;
     
 }
 .tel ::placeholder{
@@ -80,35 +96,39 @@ fieldset{
 .info{
     display: flex;
     flex-flow: column nowrap;
-    width: 72.5%;
-    padding-left: 11.4%;
+    width: 80%;
+    padding-left: 7%;
     
 }
 #message{
     padding-top: 3%;
+    font-size: 120%;
 }
 textarea{
     color: #eeeeee;
     border: none;
     border-bottom: 0.1em solid #eeeeee;
+    font-size: 100%;
 }
 
 .button{
     display: flex;
     justify-content: flex-end;
     padding-top: 1%;
-    padding-right: 10.5%;
+    padding-right: 5%;
     
     
 }
 #envoie{
-    width: 15%;
+    width: 20%;
+    font-size: 100%;
     background: linear-gradient(#B5D653,#019961) ;
     color: white;
     border-radius: 44px 45px 53px 60px / 40px 43px 44px 45px;
     border-color: rgb(255, 255, 255);
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+   
 }
 .fougere{
     width: 13%;
