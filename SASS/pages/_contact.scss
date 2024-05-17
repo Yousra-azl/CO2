@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .contact__titre{
     text-align: center;
     padding-top: 3%;
@@ -140,7 +144,7 @@ textarea{
     display: flex;
     justify-content: flex-end;
     padding-top: 3%;
-    padding-right: 8%;
+    padding-right: 3%;
     padding-bottom: 5%;
     
     
@@ -193,7 +197,7 @@ textarea{
     border-radius: 50%;
     border: 1em solid #79C258;
     margin-left: 400px ;
-    position: fixed;
+    position: absolute;
     top: 12%;
     right: 21%;
 }
@@ -202,7 +206,7 @@ textarea{
     height: 7em;
     border-radius: 50%;
     border: 1.2em solid #019961;
-    position: fixed;
+    position: absolute;
     top: 16%;
     right: 25%;
 }
@@ -213,7 +217,7 @@ textarea{
     border: 1.2em solid #B5D653;
     margin-left: 500px ;
     margin-top: -350px;
-    position: fixed;
+    position: absolute;
     top: 61%;
     right: 20.5%;
 }

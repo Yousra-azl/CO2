@@ -7,6 +7,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content:flex-start;
+  font-family: "Roboto regular", sans-serif;
 }
 .asideacc a{
   color: #019961;
@@ -26,11 +27,12 @@
   background-color: white;
   padding-top: 60px;
   transition: left 0.5s ease;
+  font-family: "Roboto regular", sans-serif;
 }
 
 /* Sidenav menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 0px 32px;
   text-decoration: none;
   
   font-size: 25px;
@@ -146,6 +148,7 @@ nav{
   .sidenav{
     width: 80%;
   }
+
   .sidenav .close{
     right: 5%;
     top: 1%;
