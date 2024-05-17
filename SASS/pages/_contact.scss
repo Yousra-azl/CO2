@@ -2,6 +2,7 @@
     text-align: center;
     padding-top: 3%;
     font-family: "Montserrat semi bold", sans-serif,;
+    font-size: 180%;
    
     
 }
@@ -9,7 +10,7 @@ form{
     
     padding-left: 30%;
     padding-right: 30%;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 fieldset{
     border-top: 0.1em solid white;
@@ -74,6 +75,7 @@ fieldset{
     font-family: "Roboto regular", sans-serif;
     font-size: 120%;
     width: 100%;
+    word-spacing: normal;
 }
 #email{
     border: none;
@@ -119,6 +121,7 @@ fieldset{
     padding-left: 3.5%;
     font-family: "Roboto regular", sans-serif;
     font-size: 120%;
+    word-spacing: normal;
     
 }
 #message{
@@ -130,6 +133,7 @@ textarea{
     color: #eeeeee;
     border: none;
     border-bottom: 0.1em solid #eeeeee;
+    height: 50%;
 }
 
 .button{
@@ -225,85 +229,110 @@ textarea{
 }
 @media screen and (min-width: 300px) and (max-width: 400px){
  
-    .contact__main{
-        width: 90%;
-
-    }
+ 
     .contact__titre{
         text-align: start;
-        padding-top: 30%;
+        padding-top: 20%;
         padding-left: 3%;
         padding-bottom: 3%;
     }
     form{
-       padding: 0;
+        margin: 0;
+    padding-left: 5%;
+    padding-bottom: 13%;
+    width: 90%;
     }
+    fieldset{
+        margin: 0;
+
+    }
+ 
 
     .prenom__tel{
         display: block;
-        
+       
     
     }
     #email{
         padding-top: 2%;
+        width: 94%;
+      
     }
     .email{
-        width: 50%;
+       width: 100%;
     }
     #tel{
         padding-top: 2%;
+        width: 94%;
     }
     .tel{
-        width: 50%;
+        width: 100%;
     }
     #nom{
         padding-top: 2%;
+        width: 100%;
     }
     .nom{
-        width: 25%;
+       width: 100%;
 
     }
     #prenom{
         padding-top: 2%;
+        width: 100%;
         
     }
    
     .nom__tel{
         display: block;
+       
     }
     .grid{
+        width: 100%;
         display: flex;
         flex-flow: column nowrap;
     }
     .etatcivil{
         display: flex;
         flex-flow: row nowrap;
+       
     }
+    .prenom__tel, .nom__tel {
+        display: inline;
+        margin-right: 5px; /* espace entre "Votre" et "Prénom" ou "Nom" */
+      }
+    label[for="prenom"], label[for="nom"] {
+        display: inline-block;
+      }
     .prenom{
         display: flex;
         flex-flow: column nowrap;
         order: 1;
-        width: 25%;
+        width: 100%;
+       
     }
     .infocontact{
         display: flex;
         flex-flow: column nowrap;
         order: -1;
-     
+       
     }
     .info{
-        padding: 0;
-        width: 35%;
+        
+        width: 100%;
+        
+    }
+    #message{
+        width: 87%;
     }
     #envoye{
         font-size: 120%;
-        width: 60%;
+        width: 97%;
         padding-top: 5%;
         padding-bottom: 5%;
-    background: linear-gradient(#B5D653,#019961) ;
-    color: white;
-    border-radius: 44px 45px 53px 60px / 40px 43px 44px 45px;
-    border-color: rgb(255, 255, 255);
+        background: linear-gradient(#B5D653,#019961) ;
+        color: white;
+        border-radius: 44px 45px 53px 60px / 40px 43px 44px 45px;
+        border-color: rgb(255, 255, 255);
    
     }
     .button__mobile{
@@ -311,7 +340,8 @@ textarea{
         display: flex;
         justify-content:flex-start;
         padding-top: 1%;
-        padding-left: 7%;
+        padding-left: 2.5%;
+      
     }
     .button{
         display: none;
