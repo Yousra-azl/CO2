@@ -147,7 +147,8 @@ nav{
     right: 75%;
   }
   .sidenav{
-    width: 80%;
+    position: absolute;
+    width: 100%;
   }
 
   .sidenav .close{
