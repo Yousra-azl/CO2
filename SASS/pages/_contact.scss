@@ -365,4 +365,24 @@ textarea{
     }
    
 }
+@media screen and (min-width: 1250px) and (max-width: 1850px){
+    .contact__titre{
+        padding-top: 1%;
+    }
+form{
+    padding-left: 15%;
+    width: 70%;
+}
+  
 
+.rond1{
+    top: 10%;
+}
+.rond2{
+    top: 17%;
+}
+.rond3{
+    top: 67%;
+    right: 19%;
+}
+}
