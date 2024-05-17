@@ -1,5 +1,5 @@
 
-footer .footer{
+footer{
     border-top: 0.1em solid #79C258;
 
 }
@@ -40,10 +40,14 @@ footer .footer{
 
 .copyrightsmart{
    display: none;
+   padding-top: 5%;
 }
 
 @media screen and (min-width: 300px) and (max-width: 400px){
-
+.footer{
+    padding-left: 5%;
+    font-family: "Roboto regular", sans-serif;
+}
 .footer__liens{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -52,18 +56,36 @@ footer .footer{
     gap: 0;
 
 }
+.footer__liens li {
+    margin-top: 5%;
+}
 .footer__liens__lien{
     text-decoration: none;
     color: #3DAD5C;
-    font-size: 90%;
-   
+    font-size: 90% ; 
     
     
 }
+
 .copyrightsmart{
    display:block;
     font-size: 120%;
     padding-bottom: 1em;
+}
+#footer__modedemploi{
+    position: absolute;
+    right: 45%;
+    top: 95%;
+}
+#footer__calculateur{
+    position: absolute;
+    right: 31%;
+    top: 98.5%;
+}
+#footer__contact{
+    position: absolute;
+    right: 56%;
+    top: 102.6%;
 }
 
 }
