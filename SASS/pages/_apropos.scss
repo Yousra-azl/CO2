@@ -1,4 +1,4 @@
-.corps{
+.corps1, .corps2{
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -70,16 +70,17 @@ h5{
     }
     .groupe3{
         width: 30%;
+        margin-top: -50px;
     }
     .representation {
         margin-top: 7vh;
     }
-    .corps{
+    .corps1{
         margin-top: 10vh;
     }
 }
 @media screen and  (max-width: 768px) {
-    .corps {
+    .corps1 {
         display: flex;
         flex-direction: column;
         margin-top: 3vh;
@@ -138,4 +139,23 @@ h5{
     .trait p{
         display: none;
     }
+}
+.nature{
+    width: 80%;
+   ;
+    margin-left: 500px;
+    margin-top: -200px;
+    position: absolute;
+    z-index: -1;
+}
+.projet2{
+    width: 50%;
+    position: relative;
+    z-index: 2;
+    margin-left: 100px;
+}
+.apropos-footer{
+    position: relative;
+    z-index: 1;
+    margin-top: 300px;
 }
