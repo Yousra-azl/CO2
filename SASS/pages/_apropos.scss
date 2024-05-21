@@ -1,11 +1,12 @@
-.corps1, .corps2{
+.slide{
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 80px;
     margin-top: 10vh;
 }
 .representation{
     margin-top: 5vh;
+    width: 630px;
 }
 .rectangle{
     position: absolute;
@@ -34,14 +35,18 @@
 
 
 .projet{
-    width: 60%;
-    margin-right: 200px;
+    width: 1100px;
+    padding-left: 100px;
+  padding-right: 100px;
 }
 .trait{
     width: 300px;
     height: 5px;
     background-image: linear-gradient(to bottom right, #B5D653,  #019961);
     margin-left: 20px;
+}
+.trait2{
+    display: none;
 }
 h5{
     font-size: 50px;
@@ -59,6 +64,28 @@ h5{
     display: flex;
     flex-direction: row;
 }
+.p-desktop{
+    display: block;
+}
+.p-mobile{
+    display: none;
+}
+
+.slider {
+    display: flex;
+    align-items: start;
+}
+
+.slide{
+    float: left;
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 1366px ) {
     .rectangle{
         width: 40%;
@@ -139,23 +166,37 @@ h5{
     .trait p{
         display: none;
     }
+    .p-desktop{
+        display: none;
+    }
+    .p-mobile{
+        display: block;
+    }
+    .trait2{
+        display: block;
+    }
 }
 .nature{
-    width: 80%;
-   ;
-    margin-left: 500px;
-    margin-top: -200px;
+    width: 800px;
     position: absolute;
     z-index: -1;
+    margin-left: 600px;
+    margin-top: -200px;
+    
+    
 }
 .projet2{
-    width: 50%;
+    width: 700px;
     position: relative;
     z-index: 2;
     margin-left: 100px;
+    
+    
+ 
 }
-.apropos-footer{
+#apropos-footer{
     position: relative;
     z-index: 1;
     margin-top: 300px;
 }
+

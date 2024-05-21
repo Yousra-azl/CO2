@@ -2,6 +2,9 @@
 footer{
     border-top: 0.1em solid #79C258;
     font-family: "Roboto regular", sans-serif;
+    position: absolute;
+    width: 100%;
+    top: 94%;
 
 }
 .footer__liens{
@@ -94,4 +97,52 @@ footer{
    .footer{
     padding-bottom: 1%;
    }
+}
+@media screen and (min-width: 620px) and (max-width: 900px){
+    .footer{
+        padding-left: 5%;
+        font-family: "Roboto regular", sans-serif;
+    }
+    .footer__liens{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    
+    }
+    .footer__liens li {
+        margin-top: 3%;
+    }
+    .footer__liens__lien{
+        text-decoration: none;
+        color: #3DAD5C;
+        font-size: 90% ; 
+        
+        
+    }
+    
+    .copyrightsmart{
+       display:block;
+        font-size: 120%;
+        padding-bottom: 1em;
+    }
+    #footer__modedemploi{
+        position: absolute;
+        right: 70%;
+        top: 56%;
+    }
+    #footer__calculateur{
+        position: absolute;
+        right: 65%;
+        top: 73%;
+    }
+    #footer__contact{
+        position: absolute;
+        right: 76%;
+        top: 89%;
+       
+    }
+    
+    
 }
