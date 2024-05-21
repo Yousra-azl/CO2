@@ -12,50 +12,51 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <aside class="asideacc">
-        <nav>
-            
-            <img src="images\logo.svg" alt="logo" class="logo">
-            <ul class="asideacc__liens">
-                <li><a href="#" class="asideacc__liens__lien">ACCUEIL</a></li>
-                <li><a href="#" class="asideacc__liens__lien">Mode d'emploi</a></li>
-                <li><a href="#" class="asideacc__liens__lien">Trouver un velib</a></li>
-                <li><a href="#" class="asideacc__liens__lien">Calculateur</a></li>
-                <li><a href="#" class="asideacc__liens__lien">A propos</a></li>
-                <li><a href="#" class="asideacc__liens__lien">Contact</a></li>
-                
-            </ul>
-    
-            <div id="mySidenav" class="sidenav">
-                <a id="closeBtn" href="#" class="close">×</a>
-                
-                <ul>
-                    <li><a href="accueil.html">ACCUEIL</a></li>
-                    <li><a href="#">Mode d'emploi</a></li>
-                    <li><a href="chambre.html">Trouver un velib</a></li>
-                    <li><a href="#">Calculateur</a></li>
-                    <li><a href="#">A propos</a></li>
-                    <li><a href="#">Contact</a></li>
-                   
-                </ul>
-            </div>
-            <a href="#" id="openBtn" class="burger__icon">
-                <span class="burger-icon">
-                    <span class="color"></span>
-                    <span class="color"></span>
-                    <span class="color"></span>
-                </span>
-            </a>
-    
-    
-            
-        </nav>
-    
-    
-    
-    </aside>
+<body id="bodyvelib">
+   
+	<aside class="asideacc">
+		<nav>
+			
+			<img src="images/logo.svg" alt="logo" class="logo">
+			<ul class="asideacc__liens">
+				<li><a href="index.html" class="asideacc__liens__lien">ACCUEIL</a></li>
+				<li><a href="modeemploi.html" class="asideacc__liens__lien">Mode d'emploi</a></li>
+				<li><a href="trouverunvelib.html" class="asideacc__liens__lien">Trouver un velib</a></li>
+				<li><a href="#" class="asideacc__liens__lien">Calculateur</a></li>
+				<li><a href="#" class="asideacc__liens__lien">A propos</a></li>
+				<li><a href="#" class="asideacc__liens__lien">Contact</a></li>
+				
+			</ul>
 	
+			<div id="mySidenav" class="sidenav">
+				<a id="closeBtn" href="#" class="close">×</a>
+				
+				<ul>
+					<li><a href="index.html">ACCUEIL</a></li>
+					<li><a href="modeemploi.html">Mode d'emploi</a></li>
+					<li><a href="trouverunvelib.html">Trouver un velib</a></li>
+					<li><a href="#">Calculateur</a></li>
+					<li><a href="#">A propos</a></li>
+					<li><a href="#">Contact</a></li>
+				   
+				</ul>
+			</div>
+			<a href="#" id="openBtn" class="burger__icon">
+				<span class="burger-icon">
+					<span class="color"></span>
+					<span class="color"></span>
+					<span class="color"></span>
+				</span>
+			</a>
+	
+	
+			
+		</nav>
+	
+	
+	
+	</aside>
+	<div class="content-wrappervelib">
     <div id="wrappervelib">
 		<div id="minuteurvelib">
 			<div class="boxvelib">
@@ -81,7 +82,26 @@
 							est en cours de développement.<br>
 						Elle arrivera le 1er septembre 2024</p>
 					</div>
-					
+					</div>
+
+
+
+
+
+					<footer>
+						<div class="footer">
+						  <ul class="footer__liens">
+							<li><a href="index.html" class="footer__liens__lien">Accueil</a></li>
+							<li><a href="modeemploi.html" class="footer__liens__lien">Mode d'emploi</a></li>
+							<li><a href="trouverunvelib.html" class="footer__liens__lien">Trouver un velib</a></li>
+							<li><a href="#" class="footer__liens__lien">Calculateur</a></li>
+							<li><a href="#" class="footer__liens__lien">A propos</a></li>
+							<li><a href="contact.html" class="footer__liens__lien">Contact</a></li>
+						  </ul>
+						</div>
+					  </footer>
+<script src="caroussel.js"></script>					
 <script src="trouverunvelib.js"></script>
+<script src="boutonburger.js"></script>
 </body>
 </html>

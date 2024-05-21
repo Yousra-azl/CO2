@@ -7,8 +7,7 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content:flex-start;
-  font-family: 'Roboto';
-  
+  font-family: "Roboto regular", sans-serif;
 }
 .asideacc a{
   color: #019961;
@@ -28,11 +27,12 @@
   background-color: white;
   padding-top: 60px;
   transition: left 0.5s ease;
+  font-family: "Roboto regular", sans-serif;
 }
 
 /* Sidenav menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 0px 32px;
   text-decoration: none;
   
   font-size: 25px;
@@ -80,19 +80,20 @@
 /* Icône burger */
 .burger-icon span {
   display: block;
-  width: 25px;
+  width: 20px;
   height: 3px;
   background-color:#3DAD5C;
-  margin: 6px 0;
+  margin: 3px 0;
+  border-radius: 25%;
 }
 
 /*nav*/
 
 .logo{
   width: 15%;
+  padding-top: 1%;
   padding-left: 10%;
   padding-bottom: 1%;
-  padding-top: 1%;
 }
 .asideacc{
  
@@ -127,22 +128,34 @@ nav{
   display: none;
 }
 
-@media screen and (min-width:350px) and (max-width:760px){
+@media screen and (min-width: 300px) and (max-width: 400px){
 
   .asideacc__liens{
     display: none;
   }
   .burger__icon{
     display: block;
-    position: fixed;
-    left: 93%;
+    position: absolute;
+    left: 85%;
     bottom: 94.4%;
   }
+
   .logo{
-    width:30%;
+    width:27%;
     z-index:2;
-    position: fixed;
-    top: 2%;
+    position: absolute;
+   padding-top: 5.2%;
+    right: 69%;
   }
+  .sidenav{
+    position: absolute;
+    width: 100%;
+  }
+
+  .sidenav .close{
+    right: 5%;
+    top: 1%;
+  }
+ 
   
 }

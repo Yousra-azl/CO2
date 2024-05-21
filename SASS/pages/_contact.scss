@@ -1,59 +1,388 @@
-@media only screen and (min-device-width : 428px){
-    .containercontact{
-        width: 90%;
-        padding: 5%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 1em;
-    }
-
-    form{
-        height: 20em;
-        
-        #mail{
-            width: 100%;
-            margin: 0px;
-            padding: 0;
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row: 1;
-        }
-
-        #tel{
-            width: 100%;
-            margin: 0px;
-            padding: 0;
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row: 2;
-        }
-
-        #prenom{
-            width: 100%;
-            margin: 0px;
-            padding: 0;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row: 3;
-
-        #nom{
-            width: 100%;
-            margin: 0px;
-            padding: 0;
-            grid-column-start: 1;
-            grid-column-end: 4;
-            grid-row: 4;
-            }
-        }
-    }
+*{
+    margin: 0;
+    padding: 0;
+}
+.contact__titre{
+    text-align: center;
+    padding-top: 3%;
+    font-family: "Montserrat semi bold", sans-serif,;
+    font-size: 180%;
+   
     
-    #message{
+}
+form{
+    
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-top: 2%;
+}
+fieldset{
+    border-top: 0.1em solid white;
+    border-bottom: 0.1em solid white;
+    border-left: 0.1em solid white;
+    border-right: 0.1em solid white;
+    margin-bottom: 8%;
+    box-shadow: 0px -1px 10px   rgb(221, 220, 220);
+    border-radius: 2%;
+    background-color: white;
+    
+}
+.prenom{
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 3%;
+    font-family: "Roboto regular", sans-serif;
+    font-size: 120%;
+    width: 100%;
+    
+}
+#prenom{
+    border: none;
+    border-bottom: 0.1em solid #eeeeee;
+    padding-top: 10%;
+    font-family: "Roboto regular", sans-serif;
+    font-size: 100%;
+    color: #79C258;
+}
+.prenom ::placeholder{
+    color: #eeeeee;
+}
+.nom{
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 3%;
+    font-family: "Roboto regular", sans-serif;
+    font-size: 120%;
+    width: 100%;
+    
+}
+#nom{
+    border: none;
+    border-bottom: 0.1em solid #eeeeee;
+    padding-top: 10%;
+    font-family: "Roboto regular", sans-serif;
+    font-size: 100%;
+    color: #79C258;
+}
+.nom ::placeholder{
+    color: #eeeeee;
+}
+.etatcivil{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.email{
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: "Roboto regular", sans-serif;
+    font-size: 120%;
+    width: 100%;
+    word-spacing: normal;
+}
+#email{
+    border: none;
+    border-bottom: 0.1em solid #eeeeee;
+    padding-top: 10%;
+    font-family: "Roboto regular", sans-serif;
+    font-size: 100%;
+    color: #79C258;
+}
+.email ::placeholder{
+    color: #eeeeee;
+}
+.tel{
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: "Roboto regular", sans-serif;
+    font-size: 120%;
+    width: 100%;
+}
+#tel{
+    border: none;
+    border-bottom: 0.1em solid #eeeeee;
+    padding-top: 10%;
+    font-family: "Roboto regular", sans-serif;
+    font-size: 100%;
+    color: #79C258;
+    
+    
+}
+.tel ::placeholder{
+    color: #eeeeee;
+}
+.infocontact{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.info{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 88.5%;
+    padding-left: 3.5%;
+    font-family: "Roboto regular", sans-serif;
+    font-size: 120%;
+    word-spacing: normal;
+    
+}
+#message{
+    padding-top: 4%;
+    font-family: "Roboto regular", sans-serif;
+    font-size: 100%;
+}
+textarea{
+    color: #eeeeee;
+    border: none;
+    border-bottom: 0.1em solid #eeeeee;
+    height: 50%;
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+    
+    
+}
+#envoie{
+    width: 25%;
+    background: linear-gradient(#B5D653,#019961) ;
+    color: white;
+    border-radius: 44px 45px 53px 60px / 40px 43px 44px 45px;
+    border-color: rgb(255, 255, 255);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: "Roboto regular", sans-serif;
+    font-size: 120%;
+    
+}
+.fougere{
+    width: 13%;
+    z-index: -1;
+    position: absolute;
+    left: 22%;
+    top: 17%;
+}
+.algue{
+    width: 13%;
+    z-index: -1;
+    position: absolute;
+    top: 58%;
+    left: 19.1%;
+    transform: rotate(-10deg);
+}
+.plante{
+    width: 13%;
+    z-index: -1;
+    position: absolute;
+    right: 21.5%;
+    top: 58%;
+    transform: rotate(15deg);
+}
+.ronds{
+    
+    grid-column: 7/9;
+    grid-row: 1/2;
+    width: 13%;
+   
+}
+.rond1{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 1em solid #79C258;
+    margin-left: 400px ;
+    position: absolute;
+    top: 12%;
+    right: 21%;
+}
+.rond2{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    border: 1.2em solid #019961;
+    position: absolute;
+    top: 16%;
+    right: 25%;
+}
+.rond3{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: 1.2em solid #B5D653;
+    margin-left: 500px ;
+    margin-top: -350px;
+    position: absolute;
+    top: 61%;
+    right: 20.5%;
+}
+
+.prenom__tel{
+    display: none;
+}
+.nom__tel{
+    display: none;
+}
+.button__mobile{
+    display: none;
+}
+@media screen and (min-width: 300px) and (max-width: 400px){
+ 
+ 
+    .contact__titre{
+        text-align: start;
+        padding-top: 20%;
+        padding-left: 3%;
+        padding-bottom: 3%;
+    }
+    form{
+        margin: 0;
+    padding-left: 5%;
+    padding-bottom: 13%;
+    width: 90%;
+    }
+    fieldset{
+        margin: 0;
+
+    }
+ 
+
+    .prenom__tel{
+        display: block;
+       
+    
+    }
+    #email{
+        padding-top: 2%;
+        width: 94%;
+      
+    }
+    .email{
+       width: 100%;
+    }
+    #tel{
+        padding-top: 2%;
+        width: 94%;
+    }
+    .tel{
         width: 100%;
-        margin: 0px;
-        padding: 0;
-        grid-row-start: 4;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        }
+    }
+    #nom{
+        padding-top: 2%;
+        width: 100%;
+    }
+    .nom{
+       width: 100%;
+
+    }
+    #prenom{
+        padding-top: 2%;
+        width: 100%;
+        
+    }
+   
+    .nom__tel{
+        display: block;
+       
+    }
+    .grid{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .etatcivil{
+        display: flex;
+        flex-flow: row nowrap;
+       
+    }
+    .prenom__tel, .nom__tel {
+        display: inline;
+        margin-right: 5px; /* espace entre "Votre" et "Prénom" ou "Nom" */
+      }
+    label[for="prenom"], label[for="nom"] {
+        display: inline-block;
+      }
+    .prenom{
+        display: flex;
+        flex-flow: column nowrap;
+        order: 1;
+        width: 100%;
+       
+    }
+    .infocontact{
+        display: flex;
+        flex-flow: column nowrap;
+        order: -1;
+       
+    }
+    .info{
+        
+        width: 100%;
+        
+    }
+    #message{
+        width: 87%;
+    }
+    #envoye{
+        font-size: 120%;
+        width: 97%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background: linear-gradient(#B5D653,#019961) ;
+        color: white;
+        border-radius: 44px 45px 53px 60px / 40px 43px 44px 45px;
+        border-color: rgb(255, 255, 255);
+   
+    }
+    .button__mobile{
+        display: block;
+        display: flex;
+        justify-content:flex-start;
+        padding-top: 1%;
+        padding-left: 2.5%;
+      
+    }
+    .button{
+        display: none;
+    }
+ 
+    .ronds{
+        display: none;
+    }
+    .fougere{
+        display: none;
+    }
+    .plante{
+        display: none;
+    }
+    .algue{
+        display: none;
+    }
+   
+}
+@media screen and (min-width: 1250px) and (max-width: 1850px){
+    .contact__titre{
+        padding-top: 1%;
+    }
+form{
+    padding-left: 15%;
+    width: 70%;
+}
+  
+
+.rond1{
+    top: 10%;
+}
+.rond2{
+    top: 17%;
+}
+.rond3{
+    top: 67%;
+    right: 19%;
+}
 }
