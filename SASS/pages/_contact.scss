@@ -4,7 +4,7 @@
 }
 .contact__titre{
     text-align: center;
-    padding-top: 3%;
+    padding-top: 2.5%;
     font-family: "Montserrat semi bold", sans-serif,;
     font-size: 180%;
    
@@ -164,24 +164,24 @@ textarea{
 .fougere{
     width: 13%;
     z-index: -1;
-    position: absolute;
+    position: fixed;
     left: 22%;
-    top: 17%;
+    top: 15.5%;
 }
 .algue{
     width: 13%;
     z-index: -1;
-    position: absolute;
-    top: 58%;
+    position:fixed;
+    top: 59%;
     left: 19.1%;
     transform: rotate(-10deg);
 }
 .plante{
     width: 13%;
     z-index: -1;
-    position: absolute;
+    position: fixed;
     right: 21.5%;
-    top: 58%;
+    top: 59%;
     transform: rotate(15deg);
 }
 .ronds{
@@ -197,8 +197,8 @@ textarea{
     border-radius: 50%;
     border: 1em solid #79C258;
     margin-left: 400px ;
-    position: absolute;
-    top: 12%;
+    position: fixed;
+    top: 11%;
     right: 21%;
 }
 .rond2{
@@ -206,8 +206,8 @@ textarea{
     height: 7em;
     border-radius: 50%;
     border: 1.2em solid #019961;
-    position: absolute;
-    top: 16%;
+    position: fixed;
+    top: 15%;
     right: 25%;
 }
 .rond3{
@@ -217,8 +217,8 @@ textarea{
     border: 1.2em solid #B5D653;
     margin-left: 500px ;
     margin-top: -350px;
-    position: absolute;
-    top: 61%;
+    position: fixed;
+    top: 57%;
     right: 20.5%;
 }
 
@@ -376,13 +376,36 @@ form{
   
 
 .rond1{
+    width: 2.5%;
+    height: 5%;
     top: 10%;
+    right: 18%;
 }
 .rond2{
-    top: 17%;
+    width: 4.5%;
+    height: 8%;
+    top: 14%;
+    right: 22%;
 }
 .rond3{
-    top: 67%;
-    right: 19%;
+    width: 2%;
+    height: 4%;
+    top: 59%;
+    right: 17%;
+}
+.fougere{
+    z-index: -1;
+    top: 14%;
+    left: 5%;
+}
+.plante{
+    z-index: -1;
+    top: 63%;
+    right: 17%;
+}
+.algue{
+    z-index: -1;
+    top: 65%;
+    left: 2%;
 }
 }
