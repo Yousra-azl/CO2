@@ -159,3 +159,21 @@ nav{
  
   
 }
+@media screen and (min-width: 1250px) and (max-width: 1850px){
+  .logo{
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+}
+@media screen and (min-width: 620px) and (max-width: 900px){
+  .logo{
+    width: 15%;
+    padding-left: 2%;
+  }
+ .asideacc__liens{
+  padding-left: 2%;
+ }
+ .asideacc__liens__lien{
+  font-size: 100%;
+ }
+}
