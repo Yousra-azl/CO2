@@ -366,46 +366,61 @@ textarea{
    
 }
 @media screen and (min-width: 1250px) and (max-width: 1850px){
-    .contact__titre{
-        padding-top: 1%;
-    }
+   .contact__titre{
+    padding-top: 0%;
+   }
 form{
-    padding-left: 15%;
-    width: 70%;
+    padding-left: 30%;
+    width: 26%;
+    margin-top: 1%;
 }
   
 
 .rond1{
-    width: 2.5%;
-    height: 5%;
-    top: 10%;
-    right: 18%;
-}
-.rond2{
-    width: 4.5%;
-    height: 8%;
-    top: 14%;
+    width: 2%;
+    height: 3%;
+    border-radius: 50%;
+    border: 1em solid #79C258;
+    margin-left: 400px ;
+    position: fixed;
+    top: 11%;
     right: 22%;
 }
+.rond2{
+    width: 5%;
+    height: 9%;
+    border-radius: 50%;
+    border: 1.2em solid #019961;
+    position: fixed;
+    top: 14%;
+    right: 26%;
+}
 .rond3{
-    width: 2%;
-    height: 4%;
-    top: 59%;
-    right: 17%;
+    width: 1%;
+    height: 2%;
+    border-radius: 50%;
+    border: 1em solid #B5D653;
+   
+    position: fixed;
+    top: 65%;
+    right: 22%;
 }
 .fougere{
+   
     z-index: -1;
-    top: 14%;
-    left: 5%;
+    top: 13.5%;
+    left: 22%;
 }
 .plante{
+    
     z-index: -1;
-    top: 63%;
-    right: 17%;
+    top: 62%;
+    right: 21%;
 }
 .algue{
+  
     z-index: -1;
-    top: 65%;
-    left: 2%;
+    top: 64%;
+    left: 20%;
 }
 }
