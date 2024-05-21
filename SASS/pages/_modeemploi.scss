@@ -1,9 +1,9 @@
 .container-modeemploi{
     display: flex;
     justify-content: center;
-    height: 90vh;
     align-items: center;
     color: #030303;
+    height: 107vh;
 }
 
 .box-modeemploi{
@@ -54,31 +54,66 @@
     height: auto;
 }
 
-.smart{
-    display: none;
-}
-
-.ordi{
-    display: block;
-}
-
-@media only screen and (min-width : 375px){
-    .smart{
+@media only screen and (min-width : 360px) and (max-width: 767){
+    .smartcaroussel{
         display: flex;
         justify-content: center;
     }
+}
+
+@media only screen and (min-width : 768px){
+    .bloc{
+        display: flex;
+        background-size: auto;
+        justify-content: center;
+        flex-direction: row;
+        gap: 5em;
+    }
+
+    .smartcaroussel{
+        display: none;
+    }
+
+    .container-modeemploi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #030303;
+        height: 120vh;
+    }
+}
+
+@media only screen and (min-width : 1366px){
+
+    .smartcaroussel{
+        display: none;
+    }
+
+    .container-modeemploi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #030303;
+        height: 100vh;
+    }
 
     .ordi{
-        display: none;
+        background-image: url(../images/bulles.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
 @media only screen and (min-width : 1920px){
-    .smart{
+    .smartcaroussel{
         display: none;
     }
 
     .ordi{
         display: block;
+    }
+
+    .container-modeemploi{
+        height: 50vh;
     }
 }

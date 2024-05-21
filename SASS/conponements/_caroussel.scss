@@ -1,45 +1,55 @@
-@media only screen and (min-device-width : 375px){
+@media only screen and (max-width : 767px){
 
-    .section-modeemploi, .section-modeemploi2 {
+    .section-modeemploi,
+    .section-modeemploi2 {
         display: none;
     }
-    
-    .section-modeemploi.active, .section-modeemploi2.active {
+
+    .section-modeemploi.active,
+    .section-modeemploi2.active {
         box-shadow: none;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .carousel-nav {
         text-align: center;
-        display: flex;
-        justify-content: space-between;
     }
-    
-    .caroussel-box-modeemploi{
+
+    .caroussel-box-modeemploi {
         width: 90%;
     }
-    
-    .caroussel-modeemploi{
+
+    .caroussel-modeemploi {
         width: 90%;
         display: flex;
         justify-content: center;
     }
-    
-    .prev, .next{
+
+    .prev{
         color: #73C262;
         font-size: 2em;
         font-weight: bold;
         background-color: transparent;
         border: none;
+        float: left;
     }
-    
-    .puces{
+
+    .next{
+        color: #73C262;
+        font-size: 2em;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        float: right;
+    }
+
+    .puces {
         display: flex;
         font-size: 20px;
     }
-    
+
     .container-modeemploi {
         display: flex;
         justify-content: center;
@@ -47,16 +57,21 @@
         flex-direction: column;
         height: 130vh;
     }
-    
-    .blocmodeemploi{
+
+    .bloc {
         flex-direction: column;
         gap: 0;
     }
 
-    .modeemploipuces{
+    .modeemploipuces {
         margin: 0px;
         color: #178B59;
-        font-size: 2em;
+        font-size: 1.5em;
     }
+
+    .smartcaroussel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
+}
