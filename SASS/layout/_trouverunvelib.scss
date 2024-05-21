@@ -1,10 +1,4 @@
-.footer {
 
-        position: fixed;
-        top: 70%;
-        bottom: 0%;
-        width: 100%;    
-}
 .content-wrappervelib {
     display: flex;
     flex-direction: column;
@@ -93,6 +87,49 @@
    
 }
 
+.co2jess {
+    text-align: center;
+}
 
+.co2calculezjess {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.co2distance-label,
+.co2nombre-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.co2distancejess,
+.co2nombrejess {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.calculerco2jess {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #4CAF50, #45a049);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.calculerco2jess:hover {
+    background: linear-gradient(to bottom, #45a049, #4CAF50);
+}
+
+p {
+    margin-top: 20px;
+}
 
 
