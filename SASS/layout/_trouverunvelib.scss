@@ -1,25 +1,23 @@
-
 .content-wrappervelib {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 18%;
+    padding: 10% 5%;
+    min-height: 3vh; 
 }
+
 /* Styles pour le minuteur */
 #minuteurvelib {
     display: grid;
-    grid-template-columns: repeat(4, 35%);
-    gap: 5%;
-    margin: -15% auto;
-    margin-top: 15%;
-    padding-right: 30%;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 3%;
+    margin-top: 5%;
 }
 
 .boxvelib {
-    margin-top: 250%;
-    height: 37%;
-    width: 95%;
+    height: 9vh; 
+    width: 100%; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -29,110 +27,47 @@
 }
 
 .boxvelib > div:first-child {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex: 0.7;
+    font-size: 2.5em; 
     padding: 1%;
-}
-.nombrevelib {
-    font-weight: bold;
 }
 
 .joursvelib, .heuresvelib, .minutesvelib, .secondesvelib {
-    padding: 1px;
-    color: #ffffff;
     font-size: 10px;
-    font-weight: bold;
 }
 
 .Titlevelib {
-    font-size: 250%;
+    font-size: 2.3em; 
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 50;
+    font-weight: 500; 
     font-style: normal;
     text-align: center;
     margin-top: 10%;
     margin-bottom: 5%;
 }
 
-.Paragraphevelib, .nombrevelib {
+.Paragraphevelib {
     font-family: "Roboto", sans-serif;
-  font-weight: 350;
-  font-style: normal;
-  font-size: 100%;
-  text-align: center;
-margin-top: 5%;
+    font-weight: 300; 
+    font-style: normal;
+    font-size: 0.9em; 
+    text-align: center;
+    margin-top: 1%;
+    word-spacing: normal;
 }
 
-@media screen and (min-width: 1080px) and (max-height: 1920px) and (orientation: landscape) {
-    #minuteurvelib{
-        margin-left: 35%;
-        margin-top: -20%;
-}
-.Titlevelib {
-    margin-top: -12%;
-    margin-right: 8%;
-}
-   .Paragraphevelib {
-    margin-right: 8%;
-    margin-top: -0.1%;
-   }
-}
-
-@media screen and (min-width: 1080px) and (max-height: 1920px) and (orientation: portrait) {
-    #minuteurvelib {
-        margin-top: -5%;
-        margin-right:  14%;
-    }
-    .Titlevelib {
-        margin-top: -3%;
-    }
-    .Paragraphevelib {
-        margin-top: -0.1%;
-    }
-}
-
-@media screen and (min-width: 375px) and (max-height: 800px) and (orientation: landscape) {
-    #wrappervelib {
-        padding: 0%;
+/* Mobile paysage et portrait */
+@media screen and (max-width: 800px) {
+    .content-wrappervelib {
+        padding: 15% 5%; 
     }
 
     #minuteurvelib {
-        grid-template-columns: repeat(4, 45%);
-        gap: 2%;
-        margin: -10% auto;
-        margin-top: 15%;
-        padding-right: 20%;
+        grid-template-columns: repeat(4, 1fr); 
+        margin-top: 20vh;
     }
-
     .boxvelib {
-        height: 90%;
-        width: 70%;
-        margin-top: 15%;
-    
-    }
+        width: 100%;
 
-    .boxvelib > div:first-child {
-        font-size: 30px;
-        padding: 1%;
-    }
-
-    .joursvelib, .heuresvelib, .minutesvelib, .secondesvelib {
-        font-size: 12px;
-    }
-
-    .Titlevelib {
-        margin-top: 13%;
-        font-size: 200%;
-    }
-    .Paragraphevelib {
-        margin-top: -1%;
-    }
-    .Paragraphevelib, .nombrevelib {
-        font-size: 90%;
     }
 }
 
@@ -149,6 +84,6 @@ margin-top: 5%;
 
 /* Desktops */
 @media screen and (min-width: 1367px) {
-   
+
 }
 
