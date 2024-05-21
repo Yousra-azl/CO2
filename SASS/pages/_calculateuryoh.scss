@@ -1,0 +1,52 @@
+#nb-km{
+    width: 100%;
+    border-style :none;
+    border-bottom: solid 1px;
+    border-color: rgba(0, 0, 0, 0.125);
+    height: 2.5em;
+    margin-bottom: 3em;
+}
+
+#nb-jr{
+    width: 100%;
+    border-style :none;
+    border-bottom: solid 1px;
+    border-color: rgba(0, 0, 0, 0.125);
+    height: 2.5em;
+    margin-bottom: 2em;
+}
+
+::placeholder{
+    opacity: 0.3;
+    font-size: 1.2em;
+}
+
+.calculateuryoh__main{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label{
+    font-family: "Roboto regular", sans-serif;
+}
+
+fieldset, .calculateuryoh{
+border-top: 0.1em solid white;
+  border-bottom: 0.1em solid white;
+  border-left: 0.1em solid white;
+  border-right: 0.1em solid white;
+  margin-bottom: 8%;
+  box-shadow: 0px -1px 10px rgb(221, 220, 220);
+  border-radius: 2%;
+  background-color: white;
+  padding: 2em;
+}
+
+#boutoncalculateuryoh{
+    background-color: green;
+    padding: 1em;
+    border-radius: 100px;
+    border: none;
+    color: white;
+}
