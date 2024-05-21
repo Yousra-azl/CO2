@@ -55,48 +55,18 @@
       </a>
     </nav>
   </header>
-  <h1 class="contact__titre">Contactez-nous</h1>
-  <main class="contact__main">
+  <h1 class="contact__titre">Calculateur d'émissions de CO2 <br> Trajets domicile / travail en voiture</h1>
+  <main class="calculateuryoh__main">
    
     <form>
-      <fieldset>
-        <div class="grid">
-          <div class="etatcivil">
-            <p class="prenom">
-              <label for="prenom"><span class="prenom__tel">Votre</span>Prénom</label>
-              <input type="text" id="prenom" placeholder="Prénom">
-            </p>
-            <p class="nom">
-              <label for="nom"><span class="nom__tel">Votre</span>Nom</label>
-              <input type="text" id="nom" placeholder="Nom">
-            </p>
-          </div>
-          <div class="infocontact">
-            <p class="email">
-              <label for="email">Votre email</label>
-              <input type="email" id="email" placeholder="Votre@email.com">
-            </p>
-            <p class="tel">
-              <label for="tel">Téléphone</label>
-              <input type="tel" id="tel" placeholder="Numéro">
-            </p>
-          </div>
-          <p class="info">
-            <label for="message">Votre message</label>
-            <textarea name="info" id="message" rows="4">Message</textarea>
-          </p>
+      <fieldset class="calculateuryoh">
+        <form>
+        <label>Votre distance parcourue par jour (en kilomètres) :</label>
+            <input type="text" name="" id="nb-km">
 
-
-          <p class="button">
-            <label for="envoie"></label>
-            <input type="button" id="envoie" value="Commencer">
-          </p>
-          <p class="button__mobile">
-            <label for="envoye"></label>
-            <input type="button" id="envoye" value="Envoyer">
-          </p>
-        </div>
-
+        <label>Nombre de jours travaillés par semaine :</label>
+            <input type="text" name="" id="nb-jr">
+        </form>
       </fieldset>
 
       <img class="fougere" src="images/groupe2.svg" alt="">
@@ -108,8 +78,8 @@
       <img class="algue" src="images/groupe10.svg" alt="algues">
       <img class="plante" src="images/branche.svg" alt="branche">
 
-    </form>
   </main>
+  <div style="display: none;">
   <footer>
     <div class="footer">
       <div class="copyrightsmart" id="Copyright">Copyright &copy; 2022 CO2WEB. <br> All rights reserved.</div>
@@ -123,6 +93,7 @@
       </ul>
     </div>
   </footer>
+</div>
 </body>
 
 </html>

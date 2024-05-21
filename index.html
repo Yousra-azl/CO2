@@ -17,43 +17,42 @@
 
 <body>
     <!-- début de la navbar page acceuil -->
-    <aside class="asideacc">
+    <header class="asideacc">
         <nav>
-            
-            <img src="images\logo.svg" alt="logo" class="logo">
-            <ul class="asideacc__liens">
-                <li><a href="index.html" class="asideacc__liens__lien">Accueil</a></li>
-                <li><a href="modeemploi.html" class="asideacc__liens__lien">Mode d'emploi</a></li>
-                <li><a href="trouverunvelib.html" class="asideacc__liens__lien">Trouver un velib</a></li>
-                <li><a href="calculateur.html" class="asideacc__liens__lien">Calculateur</a></li>
-                <li><a href="apropos.html" class="asideacc__liens__lien">A propos</a></li>
-                <li><a href="contact.html" class="asideacc__liens__lien">Contact</a></li>
-                
+    
+          <img src="images\logo.svg" alt="logo" class="logo">
+          <ul class="asideacc__liens">
+            <li><a href="index.html" class="asideacc__liens__lien">Accueil</a></li>
+            <li><a href="modeemploi.html" class="asideacc__liens__lien">Mode d'emploi</a></li>
+            <li><a href="trouverunvelib.html" class="asideacc__liens__lien">Trouver un velib</a></li>
+            <li><a href="#" class="asideacc__liens__lien">Calculateur</a></li>
+            <li><a href="#" class="asideacc__liens__lien">A propos</a></li>
+            <li><a href="contact.html" class="asideacc__liens__lien">Contact</a></li>
+    
+          </ul>
+    
+          <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+    
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="modeemploi.html">Mode d'emploi</a></li>
+              <li><a href="trouverunvelib.html">Trouver un velib</a></li>
+              <li><a href="#">Calculateur</a></li>
+              <li><a href="#">A propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+    
             </ul>
-    
-            <div id="mySidenav" class="sidenav">
-                <a id="closeBtn" href="#" class="close">×</a>
-                
-                <ul>
-                    <li><a href="index.html">ACCUEIL</a></li>
-                    <li><a href="modeemploi.html">Mode d'emploi</a></li>
-                    <li><a href="trouverunvelib.html">Trouver un velib</a></li>
-                    <li><a href="#">Calculateur</a></li>
-                    <li><a href="#">A propos</a></li>
-                    <li><a href="#">Contact</a></li>
-                   
-                </ul>
-            </div>
-            <a href="#" id="openBtn" class="burger__icon">
-                <span class="burger-icon">
-                    <span class="color"></span>
-                    <span class="color"></span>
-                    <span class="color"></span>
-                </span>
-            </a>
+          </div>
+          <a href="#" id="openBtn" class="burger__icon">
+            <span class="burger-icon">
+              <span class="color"></span>
+              <span class="color"></span>
+              <span class="color"></span>
+            </span>
+          </a>
         </nav>
-    
-    </aside>
+      </header>
     <!-- fin de la navbar page acceuil -->
     <div class="corps">
         <img class="image1" src="images\acceuil.svg" alt="image1">
@@ -75,14 +74,14 @@
     </div>
     <footer>
         <div class="footer">
-          <ul class="footerliens">
-            <div class="copyrightsmart">Copyright 2022 CO2WEB. <br> All rights reserved.</div>
-            <li><a href="index.html" class="footerlienslien">Accueil</a></li>
-            <li><a href="modeemploi.html" class="footerlienslien">Mode d'emploi</a></li>
-            <li><a href="trouverunvelib.html" class="footerlienslien">Trouver un velib</a></li>
-            <li><a href="calculateur.html" class="footerlienslien">Calculateur</a></li>
-            <li><a href="#" class="footerlienslien">A propos</a></li>
-            <li><a href="contact.html" class="footerliens__lien">Contact</a></li>
+          <div class="copyrightsmart" id="Copyright">Copyright &copy; 2022 CO2WEB. <br> All rights reserved.</div>
+          <ul class="footer__liens">
+            <li><a href="index.html" class="footer__liens__lien">Accueil</a></li>
+            <li><a href="modeemploi.html" class="footer__liens__lien" id="footer__modedemploi">Mode d'emploi</a></li>
+            <li><a href="trouverunvelib.html" class="footer__liens__lien">Trouver un velib</a></li>
+            <li><a href="#" class="footer__liens__lien" id="footer__calculateur">Calculateur</a></li>
+            <li><a href="#" class="footer__liens__lien">A propos</a></li>
+            <li><a href="contact.html" class="footer__liens__lien" id="footer__contact">Contact</a></li>
           </ul>
         </div>
       </footer>
