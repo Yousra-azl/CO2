@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+/*page de contact*/
 .contact__titre{
     text-align: center;
     padding-top: 2%;
@@ -10,6 +11,7 @@
    
     
 }
+/*formulaire de contact*/
 .formulaire__contact{
     
     padding-left: 30%;
@@ -161,6 +163,7 @@ textarea{
     font-size: 120%;
     
 }
+/*images page de contact*/
 .fougere{
     width: 13%;
     z-index: -1;
@@ -172,7 +175,7 @@ textarea{
     width: 13%;
     z-index: -1;
     position:fixed;
-    top: 57%;
+    top: 52%;
     left: 19.1%;
     transform: rotate(-10deg);
 }
@@ -181,9 +184,10 @@ textarea{
     z-index: -1;
     position: fixed;
     right: 21.5%;
-    top: 57%;
+    top: 52%;
     transform: rotate(15deg);
 }
+/*ronds image de contact*/
 .ronds{
     
     grid-column: 7/9;
@@ -197,8 +201,8 @@ textarea{
     border-radius: 50%;
     border: 1em solid #79C258;
     margin-left: 400px ;
-    position: fixed;
-    top: 9%;
+    position: absolute;
+    top: 11%;
     right: 21%;
 }
 .rond2{
@@ -206,8 +210,8 @@ textarea{
     height: 7em;
     border-radius: 50%;
     border: 1.2em solid #019961;
-    position: fixed;
-    top: 12%;
+    position: absolute;
+    top: 13%;
     right: 25%;
 }
 .rond3{
@@ -217,11 +221,11 @@ textarea{
     border: 1.2em solid #B5D653;
     margin-left: 500px ;
     margin-top: -350px;
-    position: fixed;
-    top: 55%;
+    position: absolute;
+    top: 57%;
     right: 20.5%;
 }
-
+/*uniquement visible en version mobile et tablette*/
 .prenom__tel{
     display: none;
 }
@@ -231,6 +235,7 @@ textarea{
 .button__mobile{
     display: none;
 }
+/*responsive mobile */
 @media screen and (min-width: 300px) and (max-width: 400px){
  
  
@@ -365,6 +370,7 @@ textarea{
     }
    
 }
+/*responsive notebook */
 @media screen and (min-width: 1250px) and (max-width: 1850px){
    .contact__titre{
     padding-top: 0%;
@@ -376,71 +382,86 @@ textarea{
    
     
 }
-.fieldset__contact{
-    margin-bottom: -1%;
+.nom{
+    margin-bottom: 0;
+}
+.prenom{
+    margin-bottom: 0;
+}
+.button{
+    margin: 0;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    
 }
 #message{
    width: 103%;
-   padding-top: 5%;
+   
 }
 .info{
     padding-left: 2%;
 }
-.button{
-    margin-bottom: 0%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-}
+
 #envoie{
-    width: 40%;
+    width: 35%;
+    font-size: 120%;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.ronds{
+    position: absolute;
 }
 .rond1{
-    width: 1.5%;
-    height: 2.5%;
+    width: 1.4em;
+    height: 1.4em;
     border-radius: 50%;
-    border: 1em solid #79C258;
+    border: 0.9em solid #79C258;
     margin-left: 400px ;
     position: fixed;
-    top: 7%;
-    right: 17.5%;
+    top: 10%;
+    right: 18%;
 }
 .rond2{
-    width: 5%;
-    height: 9%;
+    width: 4em;
+    height: 4em;
     border-radius: 50%;
     border: 1.2em solid #019961;
-    position: fixed;
-    top: 10%;
-    right: 21%;
+    position:fixed;
+    top: 11%;
+    right: 22%;
 }
 .rond3{
-    width: 1%;
-    height: 2%;
+    width: 1.5em;
+    height: 1.5em;
     border-radius: 50%;
-    border: 1em solid #B5D653;
+    border: 0.7em solid #B5D653;
+    margin-left: 500px ;
+    margin-top: -350px;
     position: fixed;
-    top: 60%;
-    right: 17%;
+    top: 63%;
+    right: 18%;
 }
 .fougere{
-   
+   position: absolute;
     z-index: -1;
     top: 10%;
     left: 21.5%;
 }
 .plante{
-    
+    position: absolute;
     z-index: -1;
-    top: 61%;
+    top: 53%;
     right: 17%;
 }
 .algue{
-  
+  position: absolute;
     z-index: -1;
-    top: 62%;
+    top: 53%;
     left: 20%;
 }
 }
+/*responsive tablette mode portrait*/
 @media screen and (min-width: 620px) and (max-width: 900px){
   
     .contact__titre{
@@ -487,6 +508,7 @@ textarea{
     }
     .nom{
        width: 100%;
+       margin: 0;
 
     }
     #prenom{
@@ -501,6 +523,7 @@ textarea{
     }
     .grid{
         width: 100%;
+        padding-top: 10%;
         display: flex;
         flex-flow: column nowrap;
     }
@@ -521,6 +544,7 @@ textarea{
         flex-flow: column nowrap;
         order: 1;
         width: 100%;
+        margin: 0;
        
     }
     .infocontact{
@@ -532,6 +556,7 @@ textarea{
     .info{
         
         width: 100%;
+        margin: 0;
         
     }
     #message{
@@ -572,4 +597,98 @@ textarea{
     .algue{
         display: none;
     }
+}
+/*responsive tablette mode paysage*/
+@media screen and (min-width: 920px) and (max-width: 1150px){
+    .logo{
+        padding-left: 2%;
+    }
+    .contact__titre{
+    padding-top: 0%;
+    font-size: 150%;
+   }
+.formulaire__contact{
+    margin-top: 0%;
+    padding-left: 20%;
+   
+    
+}
+.nom{
+    margin-bottom: 0;
+}
+.prenom{
+    margin-bottom: 0;
+}
+.button{
+    margin: 0;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    
+}
+#message{
+   width: 103%;
+   
+}
+.info{
+    padding-left: 2%;
+}
+
+#envoie{
+    width: 35%;
+    font-size: 120%;
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.ronds{
+    position: absolute;
+}
+.rond1{
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    border: 0.9em solid #79C258;
+    margin-left: 400px ;
+    position: fixed;
+    top: 10%;
+    right: 12%;
+}
+.rond2{
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: 1.2em solid #019961;
+    position:fixed;
+    top: 13%;
+    right: 16%;
+}
+.rond3{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    border: 0.7em solid #B5D653;
+    margin-left: 500px ;
+    margin-top: -350px;
+    position: fixed;
+    top: 63%;
+    right: 11%;
+}
+.fougere{
+   position: absolute;
+    z-index: -1;
+    top: 15%;
+    left: 12%;
+}
+.plante{
+    position: absolute;
+    z-index: -1;
+    top: 62%;
+    right: 12%;
+}
+.algue{
+  position: absolute;
+    z-index: -1;
+    top: 62%;
+    left: 9%;
+}
 }
