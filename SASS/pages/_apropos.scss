@@ -1,8 +1,21 @@
+// le debut du corps de la page à propos
+
+#apropos-body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth; 
+}
+.slider {
+    display: flex;
+    align-items: start;
+    margin-top: 150px;
+}
+// début du premier slide
 .slide{
     display: flex;
     flex-direction: row;
     gap: 80px;
-    margin-top: 10vh;
+    height: 278px;
 }
 .representation{
     margin-top: 5vh;
@@ -33,24 +46,13 @@
     margin-top: 7vh;
 }
 
-
 .projet{
-    width: 1100px;
+    width: 900px;
     padding-left: 100px;
-  padding-right: 100px;
 }
-.trait{
-    width: 300px;
-    height: 5px;
-    background-image: linear-gradient(to bottom right, #B5D653,  #019961);
-    margin-left: 20px;
-}
-.trait2{
-    display: none;
-}
-h5{
-    font-size: 50px;
-    color: #362e2e;
+.titre5{
+    display: flex;
+    flex-direction: row;
 }
 .cercle4{
     width: 20px;
@@ -60,31 +62,73 @@ h5{
     margin-top: 20px;
     margin-right: 20px;
 }
-.titre5{
-    display: flex;
-    flex-direction: row;
+h5{
+    font-family: "Montserrat semi bold", sans-serif,;
+    font-size: 50px;
+    color: #362e2e;
+}
+.trait{
+    width: 300px;
+    height: 5px;
+    background-image: linear-gradient(to bottom right, #B5D653,  #019961);
+    margin-left: 20px;
 }
 .p-desktop{
+    font-family: "Roboto regular", sans-serif;
     display: block;
 }
 .p-mobile{
+    font-family: "Roboto regular", sans-serif;
+    display: none;
+}
+p{
+    line-height: 2;
+}
+// fin du premier slide 
+
+.fleche{
+    align-content: center;
+}
+
+.flèche{
+    align-content: center;
+    border: none;
+    font-size: 50px;
+    text-align: center;
+    background-color: white;
+    color: #79C258 ;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 12px;
+}
+// début du deuxième slide 
+
+.fleche2{
+    align-content: center;
+    margin-left: 100px;
+}
+.projet2{
+    width: 1000px;
+    position: relative;
+    z-index: 2;
+}
+.nature{
+    width: 900px;
+    position: absolute;
+    z-index: -1;
+    margin-left: 1000px;
+    margin-top: -200px;
+}
+.trait2{
     display: none;
 }
 
-.slider {
-    display: flex;
-    align-items: start;
+#apropos-footer{
+    position: relative;
+    z-index: 1;
 }
 
-.slide{
-    float: left;
-}
-
-
-
-
-
-
+// fin du deuxième slide
 
 @media screen and (max-width: 1366px ) {
     .rectangle{
@@ -176,30 +220,5 @@ h5{
         display: block;
     }
 }
-.nature{
-    width: 800px;
-    position: absolute;
-    z-index: -1;
-    margin-left: 600px;
-    margin-top: -200px;
-    
-    
-}
-.projet2{
-    width: 700px;
-    position: relative;
-    z-index: 2;
-    margin-left: 100px;
-    
-    
- 
-}
-#apropos-footer{
-    position: relative;
-    z-index: 1;
-    margin-top: 300px;
-}
-#apropos-nav{
-    position: fixed;
-}
+
 

@@ -17,7 +17,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body id="apropos-body">
     <!-- début de la navbar page à propos -->
     <header class="asideacc" id="apropos-nav">
         <nav>
@@ -57,11 +57,10 @@
     </header>
     <!-- fin de la navbar page à propos -->
 
-    <!-- début de la première page du caroussel de la page à propos-->
     <div class="slider">
-
+        <!-- début de la première page du caroussel de la page à propos-->
         <div class="slide">
-            <div class="representation">
+            <div class="representation" id="representation">
                 <div class="rectangle"></div>
                 <img class="groupe3" src="images/groupe3.svg" alt="">
                 <img class="pc" src="images/pc.svg" alt="">
@@ -85,14 +84,18 @@
                 <p class="p-mobile">Lorem ipsum dolor sit amet.</p>
 
             </div>
-            <div class="flèche">
-               <a href="apropos.html#Cible"> <button class="next">></button></a>
+            <div class="fleche">
+                <a href="apropos.html#nature"> <button class="flèche">></button></a>
             </div>
         </div>
         <!-- fin de la première page du caroussel de la page à propos -->
 
         <!-- début de la deuxième page du caroussel de la page à propos -->
-        <div class="slide" id="Cible">
+        <div class="slide">
+            <div class="fleche2">
+                <a href="apropos.html#representation"> <button class="flèche">
+                        <</button></a>
+            </div>
             <div class="projet2">
                 <div class="titre5">
                     <div class="cercle4"></div>
@@ -102,14 +105,16 @@
                     deleniti
                     dignissimos id reiciendis maxime? Quia labore incidunt tempore earum rem sit totam ea
                     voluptatibus
-                    nostrum quae.</p>
+                    nostrum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dolore. Molestiae
+                    sapiente laborum sit quia, nostrum tenetur deserunt eius odit doloremque, rem omnis rerum vero qui
+                    voluptatem nemo perspiciatis magni.</p>
                 <div class="trait2"></div>
             </div>
-            <img class="nature" src="images/a-propos.svg" alt="">
+            <img class="nature" id="nature" src="images/a-propos.svg" alt="">
         </div>
 
+        <!-- fin de la deuxième page du caroussel de la page à propos-->
     </div>
-    <!-- fin de la deuxième page du caroussel de la page à propos-->
 
     <!-- début du footer de la page à propos -->
     <footer>
@@ -128,6 +133,9 @@
         </div>
     </footer>
     <!-- fin  du footer de la page à propos -->
+
+    <script src="scripts/apropos.js"></script>
+
 </body>
 
 </html>
