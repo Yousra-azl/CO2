@@ -4,7 +4,7 @@
     flex-direction: column; /* pour disposer les élements en colonnes */
     align-items: center; /* centrer les elements horizontalement */
     justify-content: center; /* centrer les elements verticalement */
-    padding: 10% 5%; /* ajout de marges internes 10% en haut et en bas et 5% à gauche et à droite */
+    padding: 10% 0%; /* ajout de marges internes 10% en haut et en bas et 5% à gauche et à droite */
     min-height: 3vh; /* hauteur min du conteneur */
 }
 
@@ -53,6 +53,7 @@
 /* style pour le paragraphe */
 .Paragraphevelib {
     font-family: "Roboto regular", sans-serif; /* Police du paragraphe */
+    font-weight: 300;
     font-style: normal; /* style de la police */
     font-size: 18px; /* taille de la police */
     text-align: center; /* centre le paragragphe */
