@@ -10,13 +10,13 @@
    
     
 }
-form{
+.formulaire__contact{
     
     padding-left: 30%;
     padding-right: 30%;
     margin-top: 1%;
 }
-fieldset{
+.fieldset__contact{
     border-top: 0.1em solid white;
     border-bottom: 0.1em solid white;
     border-left: 0.1em solid white;
@@ -172,7 +172,7 @@ textarea{
     width: 13%;
     z-index: -1;
     position:fixed;
-    top: 57%;
+    top: 53%;
     left: 19.1%;
     transform: rotate(-10deg);
 }
@@ -181,7 +181,7 @@ textarea{
     z-index: -1;
     position: fixed;
     right: 21.5%;
-    top: 57%;
+    top: 53%;
     transform: rotate(15deg);
 }
 .ronds{
@@ -240,13 +240,13 @@ textarea{
         padding-left: 3%;
         padding-bottom: 3%;
     }
-    form{
+    .formulaire__contact{
         margin: 0;
     padding-left: 5%;
     padding-bottom: 13%;
     width: 90%;
     }
-    fieldset{
+    .fieldset__contact{
         margin: 0;
 
     }
@@ -370,13 +370,13 @@ textarea{
     padding-top: 0%;
     font-size: 150%;
    }
-form{
+.formulaire__contact{
     margin-top: 0%;
     padding-left: 30%;
    
     
 }
-fieldset{
+.fieldset__contact{
     margin-bottom: -1%;
 }
 #message{
@@ -449,13 +449,13 @@ fieldset{
         padding-left: 3%;
         padding-bottom: 2%;
     }
-    form{
+    .formulaire__contact{
         margin: 0;
     padding-left: 5%;
     padding-bottom: 13%;
     width: 90%;
     }
-    fieldset{
+    .fieldset__contact{
         margin: 0;
 
     }
