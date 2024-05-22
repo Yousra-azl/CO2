@@ -4,7 +4,7 @@ footer{
     font-family: "Roboto regular", sans-serif;
     position: absolute;
     width: 100%;
-    top: 94%;
+    top: 93%;
 
 }
 .footer__liens{
@@ -99,9 +99,13 @@ footer{
    }
 }
 @media screen and (min-width: 620px) and (max-width: 900px){
+    .footers{
+        top: 80%;
+    }
     .footer{
         padding-left: 5%;
         font-family: "Roboto regular", sans-serif;
+        
     }
     .footer__liens{
         display: grid;

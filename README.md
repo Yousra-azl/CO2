@@ -55,4 +55,14 @@ Pour le minuteur, j'ai procédé à la création d'un fichier JavaScript (trouve
 
 ## FRANCK :
 Pages : Contact, Calculateur
-Partie : Menu (burger & horizontal)
+Partie : Menu (burger & horizontal), footer
+
+barre de navigation : la barre de navigation a été construite en 2 partie:
+
+1 ere partie des liens dans une liste precedent le logo pour ce qui est du css  jai positionner le navbar a l'aide d'un display flex, flex flow row nowrap, justify content flex start et j'ai ensuite espacer les lien avec un margin-left.
+
+2 eme partie le bouton burger dans une div avec la class sidenav j'ai creer une nouvelle liste contenant mes liens et est former mon burger icon a l'aide d'une span englobant 3autre span.pour ce qui est du css j'ai cacher la liste du burger icon a l'aide d'un left puis j'ai animer le bouton burger en utilisant du javascript j'ai declarer 3 variable contenant ma liste l'ouverture et la fermeture de mon bouton j'ai ensuite fais en sorte qu apres un click sur le bouton il s'ouvre revellant la liste cacher avec une transition puis j'ai ajouter une fonction openNav qui rajoute une class active a mon sidenav et une fonction closeNav qui retire la class active permettant de fermer le bouton burger.
+
+page contact : la page de contact a ete consruite a l'aide d'un formulaire contenant un fieldset avec a sa suite 2 input type text pour nom,prenom un type mail pour l'email et un type tel pour le telephone puis j'ai mis un textarea pour le message pour finir j'ai mis un boutton type button afin d'envoyer le contenue du formulaire au serveur concerner.
+
+footer : pour ce qui est du footer il contient le copyright ainsi que les liens contenu dans une liste j'ai fais en sorte de cacher le copyright dans les version pcet notebook. j'ai placer le footer avec le css a l'aide d'un display flex, flex flow row nowrap justify content flex end.
