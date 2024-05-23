@@ -2,16 +2,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.caroussel-box-modeemploi > div');
     let currentSectionIndex = 0;
 
-    showSection(currentSectionIndex);
-
     function showSection(index) {
-        // Cacher toutes les sections
-        sections.forEach(section => {
+        sections.forEach((section, i) => {
             section.classList.remove('active');
+            section.style.transform = 'translateX(100%)'; // Position initiale hors de la vue à droite
+            if (i === index) {
+                section.classList.add('active');
+                section.style.transform = 'translateX(0)'; // Position active au centre
+            }
         });
-
-        // Afficher la section à l'index spécifié
-        sections[index].classList.add('active');
     }
 
     function nextSection() {
@@ -30,7 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
         showSection(currentSectionIndex);
     }
 
-    // Ajouter des gestionnaires d'événements aux boutons de navigation
     document.querySelector('.carousel-nav .next').addEventListener('click', nextSection);
     document.querySelector('.carousel-nav .prev').addEventListener('click', prevSection);
+
+    // Initialiser la section active
+    showSection(currentSectionIndex);
 });
