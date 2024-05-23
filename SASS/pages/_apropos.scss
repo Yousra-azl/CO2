@@ -19,6 +19,7 @@
     flex-direction: row;
     gap: 80px;
     height: 278px;
+    width: 1920px;
 }
 .representation{
     
@@ -92,6 +93,7 @@ p{
 .fleche{
     align-content: center;
     margin-left: -50px;
+    
 }
 
 .flèche{
@@ -119,6 +121,7 @@ p{
 }
 .nature{
     width: 1100px;
+    height: 110%;
     position: absolute;
     z-index: -1;
     margin-left: 800px;
@@ -140,3 +143,35 @@ p{
 
 // fin du deuxième slide
 
+@media screen and (min-width: 1366px) and (max-width:1920px) {
+    .slide{
+        width: 1366px;
+    }
+    .nature{
+        width: 700px;
+        margin-left: 700px;
+        margin-top: -260px;
+    }
+    .projet2{
+        width: 700px;
+    }
+    .pc{
+        width: 90%;
+        margin-left: 85px;
+        margin-top: 18vh;
+    }
+    .groupe3 {
+        width: 35%;
+        margin-top: -5vh;
+        margin-left: 40px;
+    }
+    .rectangle {
+        height: 300px;
+      }
+    .slider {
+        margin-top: 200px;
+    }
+}
+@media screen and {
+    
+}
