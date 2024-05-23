@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
@@ -13,16 +13,17 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="SASS\main.css">
+  <link rel="stylesheet" href="SASS/main.css">
   <script type="text/javascript" src="boutonburger.js" defer></script>
   <title>Contact Co2 Web</title>
 </head>
 
 <body>
+  <!--bare de navigation-->
   <header class="asideacc">
     <nav>
 
-      <img src="images\logo.svg" alt="logo" class="logo">
+      <img src="images/logo.svg" alt="logo" class="logo">
       <ul class="asideacc__liens">
         <li><a href="index.html" class="asideacc__liens__lien">Accueil</a></li>
         <li><a href="modeemploi.html" class="asideacc__liens__lien">Mode d'emploi</a></li>
@@ -32,7 +33,7 @@
         <li><a href="contact.html" class="asideacc__liens__lien">Contact</a></li>
 
       </ul>
-
+<!--bouton burger-->
       <div id="mySidenav" class="sidenav">
         <a id="closeBtn" href="#" class="close">×</a>
 
@@ -46,6 +47,7 @@
 
         </ul>
       </div>
+      <!--icon bouton burger-->
       <a href="#" id="openBtn" class="burger__icon">
         <span class="burger-icon">
           <span class="color"></span>
@@ -57,9 +59,9 @@
   </header>
   <h1 class="contact__titre">Contactez-nous</h1>
   <main class="contact__main">
-   
-    <form>
-      <fieldset>
+   <!--formulaire de contact-->
+    <form class="formulaire__contact">
+      <fieldset class="fieldset__contact">
         <div class="grid">
           <div class="etatcivil">
             <p class="prenom">
@@ -86,7 +88,7 @@
             <textarea name="info" id="message" rows="4">Message</textarea>
           </p>
 
-
+<!--bouton envoie formulaire de contact pc et mobile-->
           <p class="button">
             <label for="envoie"></label>
             <input type="button" id="envoie" value="Commencer">
@@ -98,7 +100,7 @@
         </div>
 
       </fieldset>
-
+<!--images formulaire de contact-->
       <img class="fougere" src="images/groupe2.svg" alt="">
       <div class="ronds">
         <div class="rond1"></div>
@@ -110,7 +112,8 @@
 
     </form>
   </main>
-  <footer>
+  <!--footer-->
+  <footer class="footers">
     <div class="footer">
       <div class="copyrightsmart" id="Copyright">Copyright &copy; 2022 CO2WEB. <br> All rights reserved.</div>
       <ul class="footer__liens">

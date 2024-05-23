@@ -1,89 +1,171 @@
+/* style pour mon conteneur  */
 .content-wrappervelib {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10% 5%;
-    min-height: 3vh; 
+    display: flex; /* flexbox */
+    flex-direction: column; /* pour disposer les élements en colonnes */
+    align-items: center; /* centrer les elements horizontalement */
+    justify-content: center; /* centrer les elements verticalement */
+    padding: 10% 0%; /* ajout de marges internes 10% en haut et en bas et 5% à gauche et à droite */
+    min-height: 3vh; /* hauteur min du conteneur */
 }
 
-/* Styles pour le minuteur */
+/* styles pour mon minuteur */
 #minuteurvelib {
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    gap: 3%;
-    margin-top: 5%;
+    display: grid; /* grid*/
+    grid-template-columns: repeat(4, 2fr); /* quatre colonnes de largeur egale */
+    gap: 3%; /* espace entre mes minuteurs */
+    margin-top: 45%; /* marge au dessus du minueteur */
 }
 
+/* style pour jhms et nombre */
 .boxvelib {
-    height: 9vh; 
-    width: 100%; 
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #019961;
-    color: #ffffff;
+    height: 8vh; /* hauteur*/
+    width: 100%; /* largeur */
+    text-align: center; /* centre le texte horizontalement */
+    display: flex; /* Flexbox pour centrer verticalement et horizontalement */
+    flex-direction: column; /* mettre element en colonne */
+    justify-content: center; /* centre les elements verticalement */
+    background-color: #019961; /* couleur de la boite */
+    color: #ffffff; /* couleur de mon texte */
 }
 
-.boxvelib > div:first-child {
-    font-size: 2.5em; 
-    padding: 1%;
+/* style pour mes chiffres*/
+.boxvelib > div:first-child /* styles pour le premier paragraphe de chaque .boxvelib */ {
+    font-size: 2.5em; /* taille des nombres */
+    padding: 1%; /* marge autour des nombres */
 }
 
+/* style */
 .joursvelib, .heuresvelib, .minutesvelib, .secondesvelib {
-    font-size: 10px;
+    font-size: 10px; /* taille jhms */
 }
 
+/* style pour le titre */
 .Titlevelib {
-    font-size: 2.3em; 
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500; 
-    font-style: normal;
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
+    font-size: 2.8em; /* taille de la police */
+    font-family: "Montserrat semi bold", sans-serif; /* nom de la police du titre */
+    font-weight: 500; /* epaisseur de la police */
+    font-style: normal; /* style de la police */
+    text-align: center; /* centre le titre */
+    margin-top: 5%; /* marge au dessus du titre */
+    margin-bottom: 5%; /* marge en dessous du titre */
 }
 
+/* style pour le paragraphe */
 .Paragraphevelib {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300; 
-    font-style: normal;
-    font-size: 0.9em; 
-    text-align: center;
-    margin-top: 1%;
-    word-spacing: normal;
+    font-family: "Roboto regular", sans-serif; /* Police du paragraphe */
+    font-weight: 300;
+    font-style: normal; /* style de la police */
+    font-size: 18px; /* taille de la police */
+    text-align: center; /* centre le paragragphe */
+    margin-top: 1%; /* marge au dessus du paragraphe */
+    word-spacing: normal; /* espacement des mots */
 }
 
-/* Mobile paysage et portrait */
-@media screen and (max-width: 800px) {
-    .content-wrappervelib {
-        padding: 15% 5%; 
-    }
-
+/* Styles pour les mobiles */
+@media screen and (min-width: 360px) and (min-height: 800px){
     #minuteurvelib {
-        grid-template-columns: repeat(4, 1fr); 
-        margin-top: 20vh;
+        margin-top: 70%; /* marge au dessus du minueteur */
     }
     .boxvelib {
-        width: 100%;
-
+        height: 8.8vh; /* hauteur*/
+}
+#footervelib {
+    top: 75%; /* permet de remonter le footer */
+    width: 100%; /* largeurdu footer */
+}
+}
+@media screen and (min-width: 800px) and (min-height: 360px){
+    #minuteurvelib {
+        margin-top: 0%; /* marge au dessus du minueteur */
     }
+    .boxvelib {
+        height: 18vh; /* hauteur*/
+}
+#footervelib {
+    top: 98%; /* permet de remonter le footer */
+    width: 100%; /* largeur du footer */
 }
 
+.content-wrappervelib {
+    padding: 3% 5%; /* ajout de marges internes 10% en haut et en bas et 5% à gauche et à droite */
+}
+}
+/* Styles pour les tablettes */
+@media screen and (min-width: 768px) and (min-height: 1024px){
+    #minuteurvelib {
+        margin-top: 45%; /* marge au dessus du minueteur */
+    }
+    .boxvelib {
+        height: 6.5vh; /* hauteur*/
+}
+#footervelib {
+    top: 65%; /* permet de remonter le footer */
+    width: 100%; /* largeurdu footer */
+}
+}
+@media screen and (min-width: 1024px) and (min-height: 768px){
+    #minuteurvelib {
+        margin-top: 60%; /* marge au dessus du minueteur */
+    }
+    .boxvelib {
+        height: 8.5vh; /* hauteur*/
+}
+#footervelib {
+    top: 92%; /* permet de remonter le footer */
+    width: 100%; /* largeurdu footer */
+}
+}
+/* Styles pour les Notebooks */
+ @media screen and (min-width: 1366px) and (min-height: 768px){
+    .boxvelib {
+        height: 8.5vh; /* hauteur*/
+}
+#footervelib {
+    top: 92%; /* permet de remonter le footer */
+    width: 100%; /* largeurdu footer */
+}
+#minuteurvelib {
+    margin-top: 75%; /* marge au dessus du minueteur */
+}
+ }
 
-/* Tablettes portrait */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+ @media screen and (min-width: 768px) and (min-height: 1366px) {
+    #minuteurvelib {
+        margin-top: 55%; /* marge au dessus du minueteur */
+    }
+    .boxvelib {
+        height: 4.5vh; /* hauteur*/
+}
+#footervelib {
+    top: 50%; /* permet de remonter le footer */
+    width: 100%; /* largeurdu footer */
+}
+ }
 
+/* Styles pour les desktops */
+@media screen and (min-width: 1920px) and (min-height: 1080px){
+    .boxvelib {
+        height: 6vh; /* hauteur*/
+}
+#footervelib {
+    top: 75%; /* permet de remonter le footer */
+    width: 98%; /* largeurdu footer */
+}
+#minuteurvelib {
+    margin-top: 70%; /* marge au dessus du minueteur */
+}
+}
+@media screen and (min-width: 1080px) and (min-height: 1920px) {
+    .boxvelib {
+        height: 3.5vh; /* hauteur*/
+}
+#footervelib {
+    top: 43%; /* permet de remonter le footer */
+    width: 100%; /* largeurdu footer */
 }
 
-/* Tablettes paysage */
-@media screen and (min-width: 1025px) and (max-width: 1366px) {
-
+#minuteurvelib {
+    margin-top: 80%; /* marge au dessus du minueteur */
 }
-
-/* Desktops */
-@media screen and (min-width: 1367px) {
-
 }
 
