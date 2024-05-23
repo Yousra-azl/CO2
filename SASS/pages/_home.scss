@@ -98,6 +98,11 @@ button {
     font-size: 15px;
     padding-top: 9px;
 }
+.acceuil-footer{
+    position: relative;
+    margin-top: 290px;
+}
+
 // Début affichage téléphone 
 @media screen and (max-width: 360px) {
     .corps {
@@ -142,6 +147,10 @@ button {
     h1 {
         font-size: 25px;
     }
+    .acceuil-footer{
+        position: relative;
+        margin-top: 20px;
+    }
    
 }
 // Fin affichage téléphone 
@@ -163,7 +172,7 @@ button {
         width: 300px;
         margin-left: 230px;
         border-radius: 50%;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 50px;
     }
 
@@ -195,6 +204,10 @@ button {
 
     h1 {
         font-size: 25px;
+    }
+    .acceuil-footer{
+        position: relative;
+        margin-top: 20px;
     }
 }
 // Fin affichage tablette 
