@@ -41,12 +41,12 @@ footer{
     text-decoration: none;
     color: #3DAD5C;
 }
-
+/*copyright*/
 .copyrightsmart{
    display: none;
    padding-top: 5%;
 }
-
+/*responsive mobile*/
 @media screen and (min-width: 300px) and (max-width: 400px){
 .footer{
     padding-left: 5%;
@@ -93,14 +93,16 @@ footer{
 }
 
 }
+/*responsive notebook*/
 @media screen and (min-width: 1250px) and (max-width: 1850px){
    .footer{
     padding-bottom: 1%;
    }
 }
+/*responsive tablette*/
 @media screen and (min-width: 620px) and (max-width: 900px){
     .footers{
-        top: 80%;
+        top: 90%;
     }
     .footer{
         padding-left: 5%;

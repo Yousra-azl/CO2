@@ -27,6 +27,7 @@
     box-shadow: 0px -1px 10px   rgb(221, 220, 220);
     border-radius: 2%;
     background-color: white;
+    height: 52vh;
     
 }
 .prenom{
@@ -382,6 +383,11 @@ textarea{
    
     
 }
+.fieldset__contact{
+    margin: 0;
+    height: 59vh;
+
+}
 .nom{
     margin-bottom: 0;
 }
@@ -451,13 +457,13 @@ textarea{
 .plante{
     position: absolute;
     z-index: -1;
-    top: 53%;
+    top: 59%;
     right: 17%;
 }
 .algue{
   position: absolute;
     z-index: -1;
-    top: 53%;
+    top: 59%;
     left: 20%;
 }
 }
@@ -478,6 +484,7 @@ textarea{
     }
     .fieldset__contact{
         margin: 0;
+        height: 59vh;
 
     }
  
