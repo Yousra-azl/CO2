@@ -27,8 +27,8 @@
         <li><a href="index.html" class="asideacc__liens__lien">Accueil</a></li>
         <li><a href="modeemploi.html" class="asideacc__liens__lien">Mode d'emploi</a></li>
         <li><a href="trouverunvelib.html" class="asideacc__liens__lien">Trouver un velib</a></li>
-        <li><a href="#" class="asideacc__liens__lien">Calculateur</a></li>
-        <li><a href="#" class="asideacc__liens__lien">A propos</a></li>
+        <li><a href="calculateur.html" class="asideacc__liens__lien">Calculateur</a></li>
+        <li><a href="apropos.html" class="asideacc__liens__lien">A propos</a></li>
         <li><a href="contact.html" class="asideacc__liens__lien">Contact</a></li>
 
       </ul>
@@ -40,8 +40,8 @@
           <li><a href="index.html">Accueil</a></li>
           <li><a href="modeemploi.html">Mode d'emploi</a></li>
           <li><a href="trouverunvelib.html">Trouver un velib</a></li>
-          <li><a href="#">Calculateur</a></li>
-          <li><a href="#">A propos</a></li>
+          <li><a href="calculateur.html">Calculateur</a></li>
+          <li><a href="apropos.html">A propos</a></li>
           <li><a href="contact.html">Contact</a></li>
 
         </ul>
@@ -62,20 +62,18 @@
     <form onsubmit="event.preventDefault(); calculerCO2();">
       <fieldset class="calculateuryoh">
           <label>Votre distance parcourue par jour (en kilomètres) :</label>
-          <input type="number" id="nb-km" placeholder="ex. 20" required>
+          <input type="text" id="nb-km" placeholder="ex. 20" required>
           <br>
           <label>Nombre de jours travaillés par semaine :</label>
-          <input type="number" id="nb-jr" placeholder="ex. 5" required>
+          <input type="text" id="nb-jr" placeholder="ex. 5" required>
           <br><br>
           <center>
               <input type="submit" value="Commencer" id="boutoncalculateuryoh">
           </center>
           <p id="resultat"></p>
+          <div class="calculateuryohdesc">En utilisant cette calculatrice d'émission de carbone, vous acceptez que les informations soient inscrites et stockées dans notre base publique.</div>
       </fieldset>
   </form>
-
-        <div class="calculateuryohdesc">En utilisant cette calculatrice d'émission de carbone, vous acceptez que les informations soient inscrites et stockées dans notre base publique.</div>
-      </fieldset>
 
       <img class="fougere" src="images/groupe2.svg" alt="">
       <div class="ronds">
@@ -88,14 +86,14 @@
 
   </main>
   <footer>
-    <div class="footer">
+    <div class="footer" class="footercalculateuryoh">
       <div class="copyrightsmart" id="Copyright">Copyright &copy; 2022 CO2WEB. <br> All rights reserved.</div>
       <ul class="footer__liens">
         <li><a href="index.html" class="footer__liens__lien">Accueil</a></li>
         <li><a href="modeemploi.html" class="footer__liens__lien" id="footer__modedemploi">Mode d'emploi</a></li>
         <li><a href="trouverunvelib.html" class="footer__liens__lien">Trouver un velib</a></li>
-        <li><a href="#" class="footer__liens__lien" id="footer__calculateur">Calculateur</a></li>
-        <li><a href="#" class="footer__liens__lien">A propos</a></li>
+        <li><a href="calculateur.html" class="footer__liens__lien" id="footer__calculateur">Calculateur</a></li>
+        <li><a href="apropos.html" class="footer__liens__lien">A propos</a></li>
         <li><a href="contact.html" class="footer__liens__lien" id="footer__contact">Contact</a></li>
       </ul>
   </footer>
