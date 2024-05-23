@@ -42,13 +42,13 @@
 #prenom{
     border: none;
     border-bottom: 0.1em solid #eeeeee;
-    padding-top: 10%;
+    padding-top: 5%;
     font-family: "Roboto regular", sans-serif;
     font-size: 100%;
     color: #79C258;
 }
 .prenom ::placeholder{
-    color: #eeeeee;
+    color: #a8a5a5;
 }
 .nom{
     display: flex;
@@ -62,13 +62,13 @@
 #nom{
     border: none;
     border-bottom: 0.1em solid #eeeeee;
-    padding-top: 10%;
+    padding-top: 5%;
     font-family: "Roboto regular", sans-serif;
     font-size: 100%;
     color: #79C258;
 }
 .nom ::placeholder{
-    color: #eeeeee;
+    color: #a8a5a5;
 }
 .etatcivil{
     display: flex;
@@ -87,13 +87,13 @@
 #email{
     border: none;
     border-bottom: 0.1em solid #eeeeee;
-    padding-top: 10%;
+    padding-top: 5%;
     font-family: "Roboto regular", sans-serif;
     font-size: 100%;
     color: #79C258;
 }
 .email ::placeholder{
-    color: #eeeeee;
+    color: #a8a5a5;
 }
 .tel{
     display: flex;
@@ -105,7 +105,7 @@
 #tel{
     border: none;
     border-bottom: 0.1em solid #eeeeee;
-    padding-top: 10%;
+    padding-top: 5%;
     font-family: "Roboto regular", sans-serif;
     font-size: 100%;
     color: #79C258;
@@ -113,7 +113,7 @@
     
 }
 .tel ::placeholder{
-    color: #eeeeee;
+    color: #a8a5a5;
 }
 .infocontact{
     display: flex;
@@ -137,7 +137,7 @@
     font-size: 100%;
 }
 textarea{
-    color: #eeeeee;
+    color: #e6e1e1;
     border: none;
     border-bottom: 0.1em solid #eeeeee;
     height: 50%;

@@ -15,11 +15,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+        <script type="text/javascript" src="boutonburger.js" defer></script>
 </head>
 
 <body id="apropos-body">
-    <!-- début de la navbar page à propos -->
-    <header class="asideacc" id="apropos-nav">
+    <!--bare de navigation-->
+    <header class="asideacc">
         <nav>
 
             <img src="images/logo.svg" alt="logo" class="logo">
@@ -27,12 +28,12 @@
                 <li><a href="index.html" class="asideacc__liens__lien">Accueil</a></li>
                 <li><a href="modeemploi.html" class="asideacc__liens__lien">Mode d'emploi</a></li>
                 <li><a href="trouverunvelib.html" class="asideacc__liens__lien">Trouver un velib</a></li>
-                <li><a href="calculateur.html" class="asideacc__liens__lien">Calculateur</a></li>
+                <li><a href="#" class="asideacc__liens__lien">Calculateur</a></li>
                 <li><a href="apropos.html" class="asideacc__liens__lien">A propos</a></li>
                 <li><a href="contact.html" class="asideacc__liens__lien">Contact</a></li>
 
             </ul>
-
+            <!--bouton burger-->
             <div id="mySidenav" class="sidenav">
                 <a id="closeBtn" href="#" class="close">×</a>
 
@@ -40,12 +41,13 @@
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="modeemploi.html">Mode d'emploi</a></li>
                     <li><a href="trouverunvelib.html">Trouver un velib</a></li>
-                    <li><a href="calculateur.html">Calculateur</a></li>
+                    <li><a href="#">Calculateur</a></li>
                     <li><a href="apropos.html">A propos</a></li>
                     <li><a href="contact.html">Contact</a></li>
 
                 </ul>
             </div>
+            <!--icon bouton burger-->
             <a href="#" id="openBtn" class="burger__icon">
                 <span class="burger-icon">
                     <span class="color"></span>
@@ -55,67 +57,67 @@
             </a>
         </nav>
     </header>
-    <!-- fin de la navbar page à propos -->
-
-    <div class="slider">
-        <!-- début de la première page du caroussel de la page à propos-->
-        <div class="slide">
-            <div class="representation" id="representation">
-                <div class="rectangle"></div>
-                <img class="groupe3" src="images/groupe3.svg" alt="">
-                <img class="pc" src="images/pc.svg" alt="">
-            </div>
-            <div class="projet">
-                <div class="titre5">
-                    <div class="cercle4"></div>
-                    <h5>À propos du projet</h5>
+    <main>
+        <div class="slider">
+            <!-- début de la première page du caroussel de la page à propos-->
+            <div class="slide">
+                <div class="representation" id="representation">
+                    <div class="rectangle"></div>
+                    <img class="groupe3" src="images/groupe3.svg" alt="">
+                    <img class="pc" src="images/pc.svg" alt="">
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quaerat labore, esse repudiandae
-                    deleniti
-                    dignissimos id reiciendis maxime? Quia labore incidunt tempore earum rem sit totam ea
-                    voluptatibus
-                    nostrum quae.</p>
-                <div class="trait"></div>
-                <p class="p-desktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel odit
-                    odio
-                    aut
-                    officiis quos
-                    perspiciatis libero nemo consequatur illo porro rationei sit.</p>
-                <p class="p-mobile">Lorem ipsum dolor sit amet.</p>
+                <div class="projet">
+                    <div class="titre5">
+                        <div class="cercle4"></div>
+                        <h5>À propos du projet</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quaerat labore, esse repudiandae
+                        deleniti
+                        dignissimos id reiciendis maxime? Quia labore incidunt tempore earum rem sit totam ea
+                        voluptatibus
+                        nostrum quae.</p>
+                    <div class="trait"></div>
+                    <p class="p-desktop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel odit
+                        odio
+                        aut
+                        officiis quos
+                        perspiciatis libero nemo consequatur illo porro rationei sit.</p>
+                    <p class="p-mobile">Lorem ipsum dolor sit amet.</p>
 
-            </div>
-            <div class="fleche">
-                <a href="apropos.html#nature"> <button class="flèche">></button></a>
-            </div>
-        </div>
-        <!-- fin de la première page du caroussel de la page à propos -->
-
-        <!-- début de la deuxième page du caroussel de la page à propos -->
-        <div class="slide">
-            <div class="fleche2">
-                <a href="apropos.html#representation"> <button class="flèche">
-                        <</button></a>
-            </div>
-            <div class="projet2">
-                <div class="titre5">
-                    <div class="cercle4"></div>
-                    <h5>À propos du projet</h5>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quaerat labore, esse repudiandae
-                    deleniti
-                    dignissimos id reiciendis maxime? Quia labore incidunt tempore earum rem sit totam ea
-                    voluptatibus
-                    nostrum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dolore. Molestiae
-                    sapiente laborum sit quia, nostrum tenetur deserunt eius odit doloremque, rem omnis rerum vero qui
-                    voluptatem nemo perspiciatis magni.</p>
-                <div class="trait2"></div>
+                <div class="fleche">
+                    <a href="apropos.html#nature"> <button class="flèche">></button></a>
+                </div>
             </div>
-            <img class="nature" id="nature" src="images/a-propos.svg" alt="">
+            <!-- fin de la première page du caroussel de la page à propos -->
+
+            <!-- début de la deuxième page du caroussel de la page à propos -->
+            <div class="slide">
+                <div class="fleche2">
+                    <a href="apropos.html#representation"> <button class="flèche">
+                            << /button></a>
+                </div>
+                <div class="projet2">
+                    <div class="titre5">
+                        <div class="cercle4"></div>
+                        <h5>À propos du projet</h5>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quaerat labore, esse repudiandae
+                        deleniti
+                        dignissimos id reiciendis maxime? Quia labore incidunt tempore earum rem sit totam ea
+                        voluptatibus
+                        nostrum quae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, dolore. Molestiae
+                        sapiente laborum sit quia, nostrum tenetur deserunt eius odit doloremque, rem omnis rerum vero
+                        qui
+                        voluptatem nemo perspiciatis magni.</p>
+                    <div class="trait2"></div>
+                </div>
+                <img class="nature" id="nature" src="images/a-propos.svg" alt="">
+            </div>
+
+            <!-- fin de la deuxième page du caroussel de la page à propos-->
         </div>
-
-        <!-- fin de la deuxième page du caroussel de la page à propos-->
-    </div>
-
+    </main>
     <!-- début du footer de la page à propos -->
     <footer class="apropos-footer">
         <div class="footer">
