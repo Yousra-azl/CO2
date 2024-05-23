@@ -4,34 +4,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function showSection(index) {
         sections.forEach((section, i) => {
-            section.classList.remove('active');
-            section.style.transform = 'translateX(100%)'; // Position initiale hors de la vue à droite
             if (i === index) {
                 section.classList.add('active');
-                section.style.transform = 'translateX(0)'; // Position active au centre
+                section.style.transform = 'translateX(0)';
+                section.style.opacity = '1';
+            } else {
+                section.classList.remove('active');
+                section.style.transform = 'translateX(100%)';
+                section.style.opacity = '0';
             }
         });
     }
 
     function nextSection() {
-        currentSectionIndex++;
-        if (currentSectionIndex >= sections.length) {
-            currentSectionIndex = 0; // Revenir au début
-        }
+        currentSectionIndex = (currentSectionIndex + 1) % sections.length; // Loop to start
         showSection(currentSectionIndex);
     }
 
     function prevSection() {
-        currentSectionIndex--;
-        if (currentSectionIndex < 0) {
-            currentSectionIndex = sections.length - 1; // Aller à la fin
-        }
+        currentSectionIndex = (currentSectionIndex - 1 + sections.length) % sections.length; // Loop to end
         showSection(currentSectionIndex);
     }
 
     document.querySelector('.carousel-nav .next').addEventListener('click', nextSection);
     document.querySelector('.carousel-nav .prev').addEventListener('click', prevSection);
 
-    // Initialiser la section active
+    // Initialize the active section
     showSection(currentSectionIndex);
 });
