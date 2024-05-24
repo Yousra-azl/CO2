@@ -17,6 +17,7 @@
 }
 .calculateur__label{
     font-size: 120%;
+    padding-bottom: 2%;
 }
 
 ::placeholder{
@@ -59,6 +60,7 @@ border-top: 0.1em solid white;
     background: rgb(2,0,36);
     background: linear-gradient(-50deg, #009F64 0%, #AAD46B 100%); 
     padding: 1.5em;
+    margin-bottom: 1em;
     border-radius: 100px;
     border: none;
     color: white;
@@ -109,13 +111,13 @@ border-top: 0.1em solid white;
     z-index: -1;
     position: fixed;
     left: 17%;
-    top: 19%;
+    top: 23%;
 }
 .algue__calculateur{
     width: 13%;
     z-index: -1;
     position:fixed;
-    top: 44%;
+    top: 48%;
     left: 14%;
     transform: rotate(-10deg);
 }
@@ -124,7 +126,7 @@ border-top: 0.1em solid white;
     z-index: -1;
     position: fixed;
     right: 16%;
-    top: 42%;
+    top: 46%;
     transform: rotate(15deg);
 }
 .ronds__calculateur{
@@ -139,7 +141,7 @@ border-top: 0.1em solid white;
     border: 1em solid #79C258;
     margin-left: 400px ;
     position: absolute;
-    top: 15%;
+    top: 18%;
     right: 17%;
 }
 .rond2__calculateur{
@@ -148,7 +150,7 @@ border-top: 0.1em solid white;
     border-radius: 50%;
     border: 1.2em solid #019961;
     position: absolute;
-    top: 20%;
+    top: 23%;
     right: 21%;
 }
 .rond3__calculateur{
@@ -159,7 +161,7 @@ border-top: 0.1em solid white;
     margin-left: 500px ;
     margin-top: -350px;
     position: absolute;
-    top: 58%;
+    top: 61%;
     right: 16%;
 }
 
