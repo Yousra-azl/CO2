@@ -166,8 +166,13 @@ border-top: 0.1em solid white;
 }
 
 @media only screen and (min-width : 360px) and (max-width: 767px){
+
+    .arc, .algue__calculateur, .plante__calculateur, .ronds__calculateur, .ronds1__calculateur, .ronds2__calculateur, .ronds3__calculateur{
+        display: none;
+    }
+
     fieldset, .calculateur{
-        height: 50vh;
+        height: 59vh;
         padding-left: 1em;
         padding-right: 1em;
     }
@@ -212,8 +217,13 @@ border-top: 0.1em solid white;
 }
 
 @media only screen and (min-width : 768px){
+
+    .arc, .algue__calculateur, .plante__calculateur, .ronds__calculateur, .ronds1__calculateur, .ronds2__calculateur, .ronds3__calculateur{
+        display: none;
+    }
+
     fieldset, .calculateur{
-        height: 30vh;
+        height: 44vh;
         padding-left: 1em;
         padding-right: 1em;
     }
@@ -254,9 +264,14 @@ border-top: 0.1em solid white;
         }
 
         fieldset, .calculateur{
-            height: 40vh;
+            height: 56vh;
             padding-left: 10em;
             padding-right: 10em;
+        }
+
+
+        .arc, .algue__calculateur, .plante__calculateur, .ronds__calculateur, .ronds1__calculateur, .ronds2__calculateur, .ronds3__calculateur{
+            display: block;
         }
 
     }
@@ -270,5 +285,9 @@ border-top: 0.1em solid white;
         .calculateur__main{
             width: 50%;
             margin-bottom: 2em;
+        }
+
+        .arc, .algue__calculateur, .plante__calculateur, .ronds__calculateur, .ronds1__calculateur, .ronds2__calculateur, .ronds3__calculateur{
+            display: block;
         }
     }
