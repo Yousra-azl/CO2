@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevButton = document.getElementById('prevSlide'); // Sélectionne le bouton "Précédent"
     const slides = document.querySelector('.slides'); // Sélectionne le conteneur des diapositives
     const totalSlides = document.querySelectorAll('.slide').length;// Compte le nombre total de diapositives dans le carrousel
-    
-    // Initialise l'index de la diapositive actuelle à 0
+// Initialise l'index de la diapositive actuelle à 0
     /* Initialisation de l'index: La variable currentSlide est initialisée à 0 pour indiquer que la première diapositive est affichée initialement */
     let currentSlide = 0;
 
@@ -44,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
     la position des diapositives en fonction de la diapositive actuellement affichée. Cette fonction ajuste la valeur de la propriété transform du conteneur des diapositives pour déplacer horizontalement les diapositives visibles dans le carrousel. */
     function updateSlidePosition() {
         // Déplace les diapositives horizontalement pour montrer la diapositive actuelle
-        slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        slides.style.transform = `translateX(-${currentSlide 100}%)`;
     }
 });
-
