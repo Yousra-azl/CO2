@@ -172,6 +172,47 @@ p{
         margin-top: 200px;
     }
 }
-@media screen and {
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    .slide{
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+    }
+    .nature{
+        width: 50%;
+        margin-left: 700px;
+        margin-top: -260px;
+    }
+    .projet{
+        width: 700px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .rectangle{
+        width: 550px;
+        height: 300px;
+    }
+    .pc{
+        width: 400px;
+        margin-left: 90px;
+        margin-top: 12vh;
+    }
+    .groupe3{
+        width: 60%;
+        margin-top: -4vh;
+        margin-left: 40px;
+    }
+    .fleche{
+        margin-left: 650px;
+        margin-top: -810px;
+    }
+    .fleche2{
+        margin-left: 10px;
+        margin-top: 95px;
+    }
+    .projet2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     
 }
