@@ -17,7 +17,8 @@
 }
 .calculateur__label{
     font-size: 120%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
 }
 
 ::placeholder{
@@ -45,7 +46,7 @@ border-top: 0.1em solid white;
   box-shadow: 0px -1px 10px rgb(221, 220, 220);
   border-radius: 2%;
   background-color: white;
-  padding: 2em;
+  padding: 1em;
   height: 50vh;
   display: flex;
   flex-direction: column;
