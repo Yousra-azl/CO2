@@ -1,5 +1,7 @@
-// script.js
+// calculateur Yohann
+
 function calculerCO2() {
+    
     // Récupérer les valeurs des champs
     var distanceParJour = parseFloat(document.getElementById('nb-km').value);
     var joursParSemaine = parseInt(document.getElementById('nb-jr').value);

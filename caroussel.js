@@ -2,35 +2,33 @@ document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.caroussel-box-modeemploi > div');
     let currentSectionIndex = 0;
 
-    showSection(currentSectionIndex);
-
     function showSection(index) {
-        // Cacher toutes les sections
-        sections.forEach(section => {
-            section.classList.remove('active');
+        sections.forEach((section, i) => {
+            if (i === index) {
+                section.classList.add('active');
+                section.style.transform = 'translateX(0)';
+                section.style.opacity = '1';
+            } else {
+                section.classList.remove('active');
+                section.style.transform = 'translateX(100%)';
+                section.style.opacity = '0';
+            }
         });
-
-        // Afficher la section à l'index spécifié
-        sections[index].classList.add('active');
     }
 
     function nextSection() {
-        currentSectionIndex++;
-        if (currentSectionIndex >= sections.length) {
-            currentSectionIndex = 0; // Revenir au début
-        }
+        currentSectionIndex = (currentSectionIndex + 1) % sections.length; // Loop to start
         showSection(currentSectionIndex);
     }
 
     function prevSection() {
-        currentSectionIndex--;
-        if (currentSectionIndex < 0) {
-            currentSectionIndex = sections.length - 1; // Aller à la fin
-        }
+        currentSectionIndex = (currentSectionIndex - 1 + sections.length) % sections.length; // Loop to end
         showSection(currentSectionIndex);
     }
 
-    // Ajouter des gestionnaires d'événements aux boutons de navigation
     document.querySelector('.carousel-nav .next').addEventListener('click', nextSection);
     document.querySelector('.carousel-nav .prev').addEventListener('click', prevSection);
+
+    // Initialize the active section
+    showSection(currentSectionIndex);
 });
