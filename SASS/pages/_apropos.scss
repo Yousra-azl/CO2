@@ -5,11 +5,6 @@ body {
   padding: 0;
 }
 
-#apropos-nav {
-  position: fixed;
-  top: 0;
-}
-
 #apropos-body {
   height: 100%;
   width: 100%;
@@ -188,10 +183,10 @@ p {
     margin-top: -140px;
 }
 }
-@media screen and (min-width: 768px) and (max-width: 1360px) {
+@media screen and (max-width: 768px) {
   h5{
     position: fixed;
-    margin-top: -560px;
+    margin-top: -500px;
   }
   #h5-apropos{
     display: none;
@@ -202,21 +197,22 @@ p {
       flex-direction: column;
   }
   .nature{
-      width: 50%;
-      margin-left: 700px;
-      margin-top: -260px;
+    width: 60%;
+    margin-left: 280px;
+    margin-top: -90px;
   }
   .projet{
       width: 700px;
       padding-left: 50px;
       padding-right: 50px;
+      margin-top: -80px;
   }
   .rectangle{
-      width: 550px;
+      width: 74%;
       height: 300px;
   }
   .pc{
-      width: 400px;
+      width: 63%;
       margin-left: 90px;
       margin-top: 12vh;
   }
@@ -227,7 +223,7 @@ p {
   }
   .fleche{
       margin-left: 650px;
-      margin-top: -810px;
+      margin-top: -680px
   }
   .fleche2{
       margin-left: 10px;
@@ -237,6 +233,15 @@ p {
       display: flex;
       flex-direction: column-reverse;
       margin-left: 40px;
+  }
+  .p-desktop{
+    display: none;
+  }
+  .p-mobile{
+    display: block;
+  }
+  .cercle4{
+    display: none;
   }
   
 }
