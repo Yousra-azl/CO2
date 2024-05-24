@@ -65,7 +65,8 @@ border-top: 0.1em solid white;
     border: none;
     color: white;
     display: block;
-   
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #boutoncalculateur:hover{
@@ -264,7 +265,7 @@ border-top: 0.1em solid white;
         }
 
         fieldset, .calculateur{
-            height: 56vh;
+            height: 50vh;
             padding-left: 10em;
             padding-right: 10em;
         }
