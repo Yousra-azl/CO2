@@ -40,7 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fonction pour mettre à jour la position des diapositives
     /* Fonction de mise à jour de la position des diapositives: Une fonction est définie pour mettre à jour 
-    la position des diapositives en fonction de la diapositive actuellement affichée. Cette fonction ajuste la valeur de la propriété transform du conteneur des diapositives pour déplacer horizontalement les diapositives visibles dans le carrousel. */
+    la position des diapositives en fonction de la diapositive actuellement affichée. Cette fonction ajuste la valeur
+     de la propriété transform du conteneur des diapositives pour déplacer horizontalement les diapositives visibles dans le carrousel. */
     function updateSlidePosition() {
         // Déplace les diapositives horizontalement pour montrer la diapositive actuelle
         slides.style.transform = `translateX(-${currentSlide 100}%)`;
