@@ -59,10 +59,10 @@
    
     <form onsubmit="event.preventDefault(); calculerCO2();">
       <fieldset class="calculateur">
-          <label>Votre distance parcourue par jour (en kilomètres) :</label>
+          <label class="calculateur__label">Votre distance parcourue par jour (en kilomètres) :</label>
           <input type="text" id="nb-km" placeholder="www.exemple.com" required>
           <br>
-          <label>Nombre de jours travaillés par semaine :</label>
+          <label class="calculateur__label">Nombre de jours travaillés par semaine :</label>
           <input type="text" id="nb-jr" placeholder="Nombre" required>
           <br><br>
           <center>
@@ -71,20 +71,20 @@
           <center>
             <input type="submit" value="Calculer maintenant" id="boutoncalculateursmart">
         </center>
-          <div class="calculateurdesc">En utilisant cette calculatrice d'émission de carbone, vous acceptez que les informations soient inscrites et stockées dans notre base publique.</div>
+          <div class="calculateurdesc">En utilisant cette calculatrice d'émission de carbone, vous acceptez que les informations soient inscrites et <br>stockées dans notre base publique.</div>
           <br>
           <p id="resultat"></p>
       </fieldset>
   </form>
 
-      <img class="fougere" src="images/groupe2.svg" alt="">
-      <div class="ronds">
-        <div class="rond1"></div>
-        <div class="rond2"></div>
-        <div class="rond3"></div>
+      <img class="arc" src="images/groupe2.svg" alt="">
+      <div class="ronds__calculateur">
+        <div class="rond1__calculateur"></div>
+        <div class="rond2__calculateur"></div>
+        <div class="rond3__calculateur"></div>
       </div>
-      <img class="algue" src="images/groupe10.svg" alt="algues">
-      <img class="plante" src="images/branche.svg" alt="branche">
+      <img class="algue__calculateur" src="images/groupe10.svg" alt="algues">
+      <img class="plante__calculateur" src="images/branche.svg" alt="branche">
 
   </main>
   <footer>

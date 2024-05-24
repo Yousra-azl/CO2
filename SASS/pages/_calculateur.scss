@@ -15,6 +15,9 @@
     height: 2.5em;
     margin-bottom: 2em;
 }
+.calculateur__label{
+    font-size: 120%;
+}
 
 ::placeholder{
     opacity: 0.3;
@@ -60,13 +63,14 @@ border-top: 0.1em solid white;
     border: none;
     color: white;
     display: block;
+   
 }
 
 #boutoncalculateur:hover{
     transition: 1s;
     background: rgb(2,0,36);
-    background: linear-gradient(-50deg, #AAD46B 0%,#009F64 100%);
-    padding: 1.5em;
+    background: linear-gradient(-50deg, #009F64 0%,#009F64 100%);
+    padding: 0.6em;
     border-radius: 100px;
     border: none;
     color: white;
@@ -98,6 +102,65 @@ border-top: 0.1em solid white;
 .calculateurdesc{
     font-family: "Roboto regular", sans-serif;
     text-align: center;
+    font-size: 80%;
+}
+.arc{
+    width: 13%;
+    z-index: -1;
+    position: fixed;
+    left: 17%;
+    top: 19%;
+}
+.algue__calculateur{
+    width: 13%;
+    z-index: -1;
+    position:fixed;
+    top: 44%;
+    left: 14%;
+    transform: rotate(-10deg);
+}
+.plante__calculateur{
+    width: 13%;
+    z-index: -1;
+    position: fixed;
+    right: 16%;
+    top: 42%;
+    transform: rotate(15deg);
+}
+.ronds__calculateur{
+    grid-column: 7/9;
+    grid-row: 1/2;
+    width: 13%;
+}
+.rond1__calculateur{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 1em solid #79C258;
+    margin-left: 400px ;
+    position: absolute;
+    top: 15%;
+    right: 17%;
+}
+.rond2__calculateur{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    border: 1.2em solid #019961;
+    position: absolute;
+    top: 20%;
+    right: 21%;
+}
+.rond3__calculateur{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: 1.2em solid #B5D653;
+    margin-left: 500px ;
+    margin-top: -350px;
+    position: absolute;
+    top: 58%;
+    right: 16%;
 }
 
 @media only screen and (min-width : 360px) and (max-width: 767px){
@@ -174,7 +237,7 @@ border-top: 0.1em solid white;
 
     #boutoncalculateur{
         display: block;
-        width: 50%;
+        width: 30%;
         padding-top: 0.6em;
         padding-bottom: 0.6em;
         font-size: 1.2em;
@@ -189,7 +252,7 @@ border-top: 0.1em solid white;
         }
 
         fieldset, .calculateur{
-            height: 50vh;
+            height: 40vh;
             padding-left: 10em;
             padding-right: 10em;
         }
@@ -199,7 +262,7 @@ border-top: 0.1em solid white;
     @media only screen and (min-width : 1920px){
         .calculateurgrndecran__titre{
             display: block;
-            margin-top: 3%;
+            margin-top: 4%;
         }
 
         .calculateur__main{
