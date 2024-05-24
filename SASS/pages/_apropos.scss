@@ -1,100 +1,121 @@
-#apropos-nav{
+/* style.css */
+body {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #apropos-nav {
     position: fixed;
     top: 0;
-}
-// le debut du corps de la page à propos
-
-#apropos-body{
+  }
+  
+  #apropos-body {
     height: 100%;
     width: 100%;
-}
-.slider {
-    display: flex;
-    align-items: start;
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
     margin-top: 250px;
-}
-// début du premier slide
-.slide{
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
     display: flex;
     flex-direction: row;
     gap: 80px;
     height: 278px;
-}
-.representation{
-    
+  }
+  
+  .representation {
     width: 630px;
-}
-.rectangle{
+  }
+  
+  .rectangle {
     position: absolute;
     width: 40%;
     height: 350px;
-    background-image: linear-gradient(to bottom right, #B5D653,  #019961);
+    background-image: linear-gradient(to bottom right, #B5D653, #019961);
     z-index: 1;
     border-top-right-radius: 300px;
-    border-bottom-right-radius: 300px ;
-    
-}
-.groupe3{
+    border-bottom-right-radius: 300px;
+  }
+  
+  .groupe3 {
     position: absolute;
     z-index: 2;
     width: 30%;
     margin-top: -6vh;
     margin-left: 70px;
-}
-.pc{
+  }
+  
+  .pc {
     position: relative;
     z-index: 3;
     width: 80%;
     margin-left: 120px;
     margin-top: 13vh;
-}
-
-.projet{
+  }
+  
+  .projet {
     width: 900px;
     padding-left: 150px;
-}
-.titre5{
+  }
+  
+  .titre5 {
     display: flex;
     flex-direction: row;
-}
-.cercle4{
+  }
+  
+  .cercle4 {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #79C258 ;
+    background-color: #79C258;
     margin-top: 20px;
     margin-right: 20px;
-}
-h5{
-    font-family: "Montserrat semi bold", sans-serif,;
+  }
+  
+  h5 {
+    font-family: "Montserrat semi bold", sans-serif;
     font-size: 50px;
     color: #362e2e;
-}
-.trait{
+  }
+  
+  .trait {
     width: 300px;
     height: 5px;
-    background-image: linear-gradient(to bottom right, #B5D653,  #019961);
+    background-image: linear-gradient(to bottom right, #B5D653, #019961);
     margin-left: 20px;
-}
-.p-desktop{
+  }
+  
+  .p-desktop {
     font-family: "Roboto regular", sans-serif;
     display: block;
-}
-.p-mobile{
+  }
+  
+  .p-mobile {
     font-family: "Roboto regular", sans-serif;
     display: none;
-}
-p{
+  }
+  
+  p {
     line-height: 2;
-}
-// fin du premier slide 
-
-.fleche{
+  }
+  
+  .fleche {
     align-content: center;
     margin-left: -50px;
-}
-
-.flèche{
+  }
+  
+  .flèche{
     align-content: center;
     border: none;
     font-size: 50px;
@@ -104,39 +125,38 @@ p{
     cursor: pointer;
     font-weight: bold;
     border-radius: 12px;
-}
-// début du deuxième slide 
-
-.fleche2{
+  }
+  .fleche2 {
     align-content: center;
     margin-left: 50px;
-}
-.projet2{
+  }
+  
+  .projet2 {
     width: 900px;
     position: relative;
     z-index: 2;
     margin-left: -50px;
-}
-.nature{
+  }
+  
+  .nature {
     width: 1100px;
     position: absolute;
     z-index: -1;
     margin-left: 800px;
     margin-top: -220px;
-}
-.trait2{
+  }
+  
+  .trait2 {
     display: none;
-}
-
-.apropos-footer{
+  }
+  
+  .apropos-footer {
     position: fixed;
     z-index: 1;
     right: 0;
     bottom: 0;
-    width: 200%;
+    width: 100%;
     border-top: 0.1em solid #79C258;
     margin-top: -20px;
-}
-
-// fin du deuxième slide
-
+  }
+  
