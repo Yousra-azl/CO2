@@ -32,18 +32,20 @@
     overflow: hidden;
     -webkit-box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.39); 
     box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.39);
+    z-index: 1;
 }
 
 .section-modeemploi2-arriere {
     content: "";
     position: absolute;
-    top: -20px;
+    top: -15px;
     left: -20px;
     right: -20px;
     bottom: -20px;
     background-image: url(../images/bulles.svg);
     background-size: cover;
     z-index: -1;
+   
 }
 
 .section-modeemploi2 .image-top-right {
@@ -52,6 +54,7 @@
     right: -15%;
     width: 200px;
     height: auto;
+    z-index: 2;
 }
 
 @media only screen and (min-width : 360px) and (max-width: 767px){
@@ -107,8 +110,12 @@
 
     .ordi{
         background-image: url(../images/bulles.svg);
+        background-attachment:fixed;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: 51% 46% ;
+        
+        
+       
     }
 }
 
