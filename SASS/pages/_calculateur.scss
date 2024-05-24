@@ -21,7 +21,7 @@
     font-size: 1.2em;
 }
 
-.calculateuryoh__main{
+.calculateur__main{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -31,7 +31,7 @@ label{
     font-family: "Roboto regular", sans-serif;
 }
 
-fieldset, .calculateuryoh{
+fieldset, .calculateur{
 border-top: 0.1em solid white;
   border-bottom: 0.1em solid white;
   border-left: 0.1em solid white;
@@ -49,7 +49,7 @@ border-top: 0.1em solid white;
   font-family: "Roboto regular", sans-serif;
 }
 
-#boutoncalculateuryoh{
+#boutoncalculateur{
     background: rgb(2,0,36);
     background: linear-gradient(-50deg, #009F64 0%, #AAD46B 100%); 
     padding: 1.5em;
@@ -58,7 +58,7 @@ border-top: 0.1em solid white;
     color: white;
 }
 
-#boutoncalculateuryoh:hover{
+#boutoncalculateur:hover{
     transition: 1s;
     background: rgb(2,0,36);
     background: linear-gradient(-50deg, #AAD46B 0%,#009F64 100%);
@@ -68,13 +68,13 @@ border-top: 0.1em solid white;
     color: white;
 }
 
-.calculateuryohgrndecran__titre{
+.calculateurgrndecran__titre{
     display: none;
     word-spacing: 0;
     text-align: center;
 }
 
-.calculateuryohpttecran__titre{
+.calculateurpttecran__titre{
     display: block;
     word-spacing: 0;
     text-align: center;
@@ -82,20 +82,20 @@ border-top: 0.1em solid white;
 }
 
 @media only screen and (min-width : 360px) and (max-width: 767){
-    .calculateuryohpttecran__titre{
+    .calculateurpttecran__titre{
         display: none;
     }
 
-    .calculateuryohgrndecran__titre{
+    .calculateurgrndecran__titre{
         display: block;
     }
 
-    .calculateuryohdesc{
+    .calculateurdesc{
         font-size: 0.9em;
         font-family: "Roboto regular", sans-serif;
     }
 
-    #boutoncalculateuryoh{
+    #boutoncalculateur{
         background: rgb(2,0,36);
         background: linear-gradient(-50deg, #009F64 0%, #AAD46B 100%); 
         padding: 1.5em;
@@ -104,40 +104,40 @@ border-top: 0.1em solid white;
         color: white;
     }
 
-    .calculateuryoh__main{
+    .calculateur__main{
         width: 50%;
     }
 }
 
 @media only screen and (min-width : 768px){
-    .calculateuryohpttecran__titre{
+    .calculateurpttecran__titre{
         display: none;
     }
 
-    .calculateuryohgrndecran__titre{
+    .calculateurgrndecran__titre{
         display: block;
         margin-top: 10%;
     }
 
-    .calculateuryoh__main{
+    .calculateur__main{
         width: 50%;
     }
 }
 
     @media only screen and (min-width : 1366px){
-        .calculateuryoh__main{
+        .calculateur__main{
             width: 50%;
         }
 
     }
 
     @media only screen and (min-width : 1920px){
-        .calculateuryohgrndecran__titre{
+        .calculateurgrndecran__titre{
             display: block;
             margin-top: 3%;
         }
 
-        .calculateuryoh__main{
+        .calculateur__main{
             width: 50%;
         }
     }

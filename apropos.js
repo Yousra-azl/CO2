@@ -44,6 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
      de la propriété transform du conteneur des diapositives pour déplacer horizontalement les diapositives visibles dans le carrousel. */
     function updateSlidePosition() {
         // Déplace les diapositives horizontalement pour montrer la diapositive actuelle
-        slides.style.transform = `translateX(-${currentSlide*100}%)`;
+        slides.style.transform = `translateX(-${currentSlide *100}%)`;
     }
 });
