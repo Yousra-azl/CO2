@@ -82,18 +82,30 @@ border-top: 0.1em solid white;
     margin-top: 20%;
 }
 
-@media only screen and (min-width : 360px) and (max-width: 767){
+@media only screen and (min-width : 360px) and (max-width: 767px){
+    fieldset, .calculateur{
+        height: 30vh;
+    }
+
     .calculateurpttecran__titre{
-        display: none;
+        display: block;
     }
 
     .calculateurgrndecran__titre{
-        display: block;
+        display: none;
     }
 
     .calculateurdesc{
         font-size: 0.9em;
         font-family: "Roboto regular", sans-serif;
+    }
+
+    .calculateur__main{
+        margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 15vh;
     }
 
     #boutoncalculateur{
@@ -102,12 +114,7 @@ border-top: 0.1em solid white;
         padding: 1.5em;
         border-radius: 100px;
         border: none;
-        color: white;
-    }
-
-    .calculateur__main{
-        width: 50%;
-        margin-bottom: 2em;
+        color: rgb(255, 255, 255);
     }
 }
 
