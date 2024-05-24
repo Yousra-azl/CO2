@@ -15,6 +15,11 @@
     height: 2.5em;
     margin-bottom: 2em;
 }
+.calculateur__label{
+    font-size: 120%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
 
 ::placeholder{
     opacity: 0.3;
@@ -41,28 +46,44 @@ border-top: 0.1em solid white;
   box-shadow: 0px -1px 10px rgb(221, 220, 220);
   border-radius: 2%;
   background-color: white;
-  padding: 2em;
-  height: 52vh;
+  padding: 1em;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1em;
   font-family: "Roboto regular", sans-serif;
+  padding-left: 10em;
+  padding-right: 10em;
 }
 
 #boutoncalculateur{
     background: rgb(2,0,36);
     background: linear-gradient(-50deg, #009F64 0%, #AAD46B 100%); 
     padding: 1.5em;
+    margin-bottom: 1em;
     border-radius: 100px;
     border: none;
     color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #boutoncalculateur:hover{
     transition: 1s;
     background: rgb(2,0,36);
-    background: linear-gradient(-50deg, #AAD46B 0%,#009F64 100%);
+    background: linear-gradient(-50deg, #009F64 0%,#009F64 100%);
+    padding: 0.6em;
+    border-radius: 100px;
+    border: none;
+    color: white;
+}
+
+#boutoncalculateursmart{
+    display: none;
+    background: rgb(2,0,36);
+    background: linear-gradient(-50deg, #009F64 0%, #AAD46B 100%); 
     padding: 1.5em;
     border-radius: 100px;
     border: none;
@@ -82,55 +103,177 @@ border-top: 0.1em solid white;
     margin-top: 20%;
 }
 
-@media only screen and (min-width : 360px) and (max-width: 767){
-    .calculateurpttecran__titre{
+.calculateurdesc{
+    font-family: "Roboto regular", sans-serif;
+    text-align: center;
+    font-size: 80%;
+}
+.arc{
+    width: 13%;
+    z-index: -1;
+    position: fixed;
+    left: 17%;
+    top: 23%;
+}
+.algue__calculateur{
+    width: 13%;
+    z-index: -1;
+    position:fixed;
+    top: 48%;
+    left: 14%;
+    transform: rotate(-10deg);
+}
+.plante__calculateur{
+    width: 13%;
+    z-index: -1;
+    position: fixed;
+    right: 16%;
+    top: 46%;
+    transform: rotate(15deg);
+}
+.ronds__calculateur{
+    grid-column: 7/9;
+    grid-row: 1/2;
+    width: 13%;
+}
+.rond1__calculateur{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 1em solid #79C258;
+    margin-left: 400px ;
+    position: absolute;
+    top: 18%;
+    right: 17%;
+}
+.rond2__calculateur{
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    border: 1.2em solid #019961;
+    position: absolute;
+    top: 23%;
+    right: 21%;
+}
+.rond3__calculateur{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    border: 1.2em solid #B5D653;
+    margin-left: 500px ;
+    margin-top: -350px;
+    position: absolute;
+    top: 61%;
+    right: 16%;
+}
+
+@media only screen and (min-width : 360px) and (max-width: 767px){
+
+    .arc, .algue__calculateur, .plante__calculateur, .ronds__calculateur, .ronds1__calculateur, .ronds2__calculateur, .ronds3__calculateur{
         display: none;
     }
 
-    .calculateurgrndecran__titre{
+    fieldset, .calculateur{
+        height: 59vh;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .calculateurpttecran__titre{
         display: block;
     }
 
-    .calculateurdesc{
-        font-size: 0.9em;
-        font-family: "Roboto regular", sans-serif;
+    .calculateurgrndecran__titre{
+        display: none;
     }
 
-    #boutoncalculateur{
-        background: rgb(2,0,36);
-        background: linear-gradient(-50deg, #009F64 0%, #AAD46B 100%); 
-        padding: 1.5em;
-        border-radius: 100px;
-        border: none;
-        color: white;
+    .calculateurdesc{
+        font-size: 0.7em;
     }
 
     .calculateur__main{
-        width: 50%;
         margin-bottom: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 2vh;
+    }
+
+    #boutoncalculateursmart{
+        display: block;
+        background: rgb(2,0,36);
+        background: linear-gradient(-50deg, #009F64 0%, #AAD46B 100%); 
+        padding: 1em;
+        border-radius: 100px;
+        border: none;
+        color: white;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        font-weight: 200;
+        width: 95%;
+    }
+
+    #boutoncalculateur{
+        display: none;
     }
 }
 
 @media only screen and (min-width : 768px){
+
+    .arc, .algue__calculateur, .plante__calculateur, .ronds__calculateur, .ronds1__calculateur, .ronds2__calculateur, .ronds3__calculateur{
+        display: none;
+    }
+
+    fieldset, .calculateur{
+        height: 44vh;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
     .calculateurpttecran__titre{
         display: none;
     }
 
     .calculateurgrndecran__titre{
         display: block;
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
     .calculateur__main{
-        width: 50%;
+        width: 90%;
         margin-bottom: 2em;
+        margin-top: 4em;
+    }
+
+    #boutoncalculateursmart{
+        display: none;
+    }
+
+    #boutoncalculateur{
+        display: block;
+        width: 30%;
+        padding-top: 0.6em;
+        padding-bottom: 0.6em;
+        font-size: 1.2em;
+        font-weight: 200;
     }
 }
 
     @media only screen and (min-width : 1366px){
         .calculateur__main{
-            width: 50%;
+            width: 90%;
             margin-bottom: 2em;
+        }
+
+        fieldset, .calculateur{
+            height: 50vh;
+            padding-left: 10em;
+            padding-right: 10em;
+        }
+
+
+        .arc, .algue__calculateur, .plante__calculateur, .ronds__calculateur, .ronds1__calculateur, .ronds2__calculateur, .ronds3__calculateur{
+            display: block;
         }
 
     }
@@ -138,11 +281,15 @@ border-top: 0.1em solid white;
     @media only screen and (min-width : 1920px){
         .calculateurgrndecran__titre{
             display: block;
-            margin-top: 3%;
+            margin-top: 4%;
         }
 
         .calculateur__main{
             width: 50%;
             margin-bottom: 2em;
+        }
+
+        .arc, .algue__calculateur, .plante__calculateur, .ronds__calculateur, .ronds1__calculateur, .ronds2__calculateur, .ronds3__calculateur{
+            display: block;
         }
     }
