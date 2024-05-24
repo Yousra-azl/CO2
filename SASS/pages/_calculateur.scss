@@ -22,7 +22,7 @@
 }
 
 .calculateuryoh__main{
-    width: 100%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -122,21 +122,22 @@ border-top: 0.1em solid white;
     .calculateuryoh__main{
         width: 50%;
     }
+}
 
     @media only screen and (min-width : 1366px){
         .calculateuryoh__main{
             width: 50%;
         }
+
     }
 
     @media only screen and (min-width : 1920px){
-        .calculateuryoh__main{
-            width: 50%;
-        }
-
         .calculateuryohgrndecran__titre{
             display: block;
             margin-top: 3%;
         }
+
+        .calculateuryoh__main{
+            width: 50%;
+        }
     }
-}
