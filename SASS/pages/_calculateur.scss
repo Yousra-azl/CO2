@@ -48,6 +48,8 @@ border-top: 0.1em solid white;
   justify-content: center;
   gap: 1em;
   font-family: "Roboto regular", sans-serif;
+  padding-left: 10em;
+  padding-right: 10em;
 }
 
 #boutoncalculateur{
@@ -57,12 +59,23 @@ border-top: 0.1em solid white;
     border-radius: 100px;
     border: none;
     color: white;
+    display: block;
 }
 
 #boutoncalculateur:hover{
     transition: 1s;
     background: rgb(2,0,36);
     background: linear-gradient(-50deg, #AAD46B 0%,#009F64 100%);
+    padding: 1.5em;
+    border-radius: 100px;
+    border: none;
+    color: white;
+}
+
+#boutoncalculateursmart{
+    display: none;
+    background: rgb(2,0,36);
+    background: linear-gradient(-50deg, #009F64 0%, #AAD46B 100%); 
     padding: 1.5em;
     border-radius: 100px;
     border: none;
@@ -85,6 +98,8 @@ border-top: 0.1em solid white;
 @media only screen and (min-width : 360px) and (max-width: 767px){
     fieldset, .calculateur{
         height: 30vh;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     .calculateurpttecran__titre{
@@ -96,8 +111,9 @@ border-top: 0.1em solid white;
     }
 
     .calculateurdesc{
-        font-size: 0.9em;
+        font-size: 0.7em;
         font-family: "Roboto regular", sans-serif;
+        text-align: center;
     }
 
     .calculateur__main{
@@ -108,36 +124,58 @@ border-top: 0.1em solid white;
         margin-top: 15vh;
     }
 
-    #boutoncalculateur{
+    #boutoncalculateursmart{
+        display: block;
         background: rgb(2,0,36);
         background: linear-gradient(-50deg, #009F64 0%, #AAD46B 100%); 
-        padding: 1.5em;
+        padding: 1em;
         border-radius: 100px;
         border: none;
-        color: rgb(255, 255, 255);
+        color: white;
+        font-size: 1em;
+        letter-spacing: 1px;
+        font-weight: 200;
+        width: 95%;
+    }
+
+    #boutoncalculateur{
+        display: none;
     }
 }
 
 @media only screen and (min-width : 768px){
+    fieldset, .calculateur{
+        height: 30vh;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
     .calculateurpttecran__titre{
         display: none;
     }
 
     .calculateurgrndecran__titre{
         display: block;
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
     .calculateur__main{
-        width: 50%;
+        width: 90%;
         margin-bottom: 2em;
+        margin-top: 8em;
     }
 }
 
     @media only screen and (min-width : 1366px){
         .calculateur__main{
-            width: 50%;
+            width: 90%;
             margin-bottom: 2em;
+        }
+
+        fieldset, .calculateur{
+            height: 30vh;
+            padding-left: 10em;
+            padding-right: 10em;
         }
 
     }
