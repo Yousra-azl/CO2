@@ -10,6 +10,139 @@
     rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="SASS\main.css">
+  <script type="text/javascript" src="boutonburger.js" defer></script>
+  <script src="calculateur.js" defer></script>
+  <title>Contact Co2 Web</title>
+</head>
+
+<body>
+  <header class="asideacc">
+    <nav>
+
+      <img src="images\logo.svg" alt="logo" class="logo">
+      <ul class="asideacc__liens">
+        <li><a href="index.html" class="asideacc__liens__lien">Accueil</a></li>
+        <li><a href="modeemploi.html" class="asideacc__liens__lien">Mode d'emploi</a></li>
+        <li><a href="trouverunvelib.html" class="asideacc__liens__lien">Trouver un velib</a></li>
+        <li><a href="calculateur.html" class="asideacc__liens__lien">Calculateur</a></li>
+        <li><a href="apropos.html" class="asideacc__liens__lien">A propos</a></li>
+        <li><a href="contact.html" class="asideacc__liens__lien">Contact</a></li>
+
+      </ul>
+
+      <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a>
+
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="modeemploi.html">Mode d'emploi</a></li>
+          <li><a href="trouverunvelib.html">Trouver un velib</a></li>
+          <li><a href="calculateur.html">Calculateur</a></li>
+          <li><a href="apropos.html">A propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+      </div>
+      <a href="#" id="openBtn" class="burger__icon">
+        <span class="burger-icon">
+          <span class="color"></span>
+          <span class="color"></span>
+          <span class="color"></span>
+        </span>
+      </a>
+    </nav>
+  </header>
+<<<<<<< HEAD
+<!-- fin de la navbar page calculateur -->
+    <div class="calculateur">
+        <h4>Calculateur d'émissions de CO2 <br> Trajets domicile / travail en voiture</h4>
+        <h4 class="calculateur2">Calculez vos émissions</h4>
+            <img class="groupe2" src="images/groupe2.svg" alt="">
+            <div class="cercles">
+                <div class="cercle1"></div>
+                <div class="cercle2"></div>
+                <div class="cercle3"></div>
+            </div>
+            <img class="groupe10" src="images/groupe10.svg" alt="feuille">
+            <img class="branche" src="images/branche.svg" alt="branche">
+    </div>
+    <footer>
+        <div class="footer">
+          <div class="copyrightsmart" id="Copyright">Copyright 2022 CO2WEB. <br> All rights reserved.</div>
+          <ul class="footer__liens">
+            <li><a href="index.html" class="footer__liens__lien">Accueil</a></li>
+            <li><a href="modeemploi.html" class="footer__liens__lien" id="footer__modedemploi">Mode d'emploi</a></li>
+            <li><a href="trouverunvelib.html" class="footer__liens__lien">Trouver un velib</a></li>
+            <li><a href="calculateur.html" class="footer__liens__lien">Calculateur</a></li>
+            <li><a href="apropos.html" class="footer__liens__lien">A propos</a></li>
+            <li><a href="contact.html" class="footer__liens__lien" id="footer__contact">Contact</a></li>
+          </ul>
+        </div>
+      </footer>
+=======
+  <h1 class="calculateuryohpttecran__titre">Calculez vos émissions</h1>
+  <h1 class="calculateuryohgrndecran__titre">Calculateur d'émissions de CO2 <br> Trajets domicile / travail en voiture</h1>
+  <main class="calculateuryoh__main">
+   
+    <form onsubmit="event.preventDefault(); calculerCO2();">
+      <fieldset class="calculateuryoh">
+          <label>Votre distance parcourue par jour (en kilomètres) :</label>
+          <input type="text" id="nb-km" placeholder="ex. 20" required>
+          <br>
+          <label>Nombre de jours travaillés par semaine :</label>
+          <input type="text" id="nb-jr" placeholder="ex. 5" required>
+          <br><br>
+          <center>
+              <input type="submit" value="Commencer" id="boutoncalculateuryoh">
+          </center>
+          <p id="resultat"></p>
+          <div class="calculateuryohdesc">En utilisant cette calculatrice d'émission de carbone, vous acceptez que les informations soient inscrites et stockées dans notre base publique.</div>
+      </fieldset>
+  </form>
+
+      <img class="fougere" src="images/groupe2.svg" alt="">
+      <div class="ronds">
+        <div class="rond1"></div>
+        <div class="rond2"></div>
+        <div class="rond3"></div>
+      </div>
+      <img class="algue" src="images/groupe10.svg" alt="algues">
+      <img class="plante" src="images/branche.svg" alt="branche">
+
+  </main>
+  <footer>
+    <div class="footer" class="footercalculateuryoh">
+      <div class="copyrightsmart" id="Copyright">Copyright &copy; 2022 CO2WEB. <br> All rights reserved.</div>
+      <ul class="footer__liens">
+        <li><a href="index.html" class="footer__liens__lien">Accueil</a></li>
+        <li><a href="modeemploi.html" class="footer__liens__lien" id="footer__modedemploi">Mode d'emploi</a></li>
+        <li><a href="trouverunvelib.html" class="footer__liens__lien">Trouver un velib</a></li>
+        <li><a href="calculateur.html" class="footer__liens__lien" id="footer__calculateur">Calculateur</a></li>
+        <li><a href="apropos.html" class="footer__liens__lien">A propos</a></li>
+        <li><a href="contact.html" class="footer__liens__lien" id="footer__contact">Contact</a></li>
+      </ul>
+  </footer>
+</div>
+
+>>>>>>> 62ee18fbc5590c14fd6763fb42edfd90d0208812
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
