@@ -101,7 +101,7 @@ h5 {
   display: none;
 }
 
-p {
+p-apropos {
   line-height: 2;
 }
 .fleche {
@@ -244,4 +244,55 @@ p {
     display: none;
   }
   
+}
+@media screen and (max-width: 360px){
+  h5{
+    font-size: 30px;
+    margin-top: -280px;
+  }
+  .slide{
+    width: 360px;
+  }
+  .rectangle {
+    width: 78%;
+    height: 150px;
+  }
+  .groupe3 {
+    width: 70%;
+    margin-left: 25px;
+}
+.pc {
+  width: 35%;
+  margin-left: 40px;
+  margin-top: 7vh;
+}
+.projet {
+  width: 340px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.fleche {
+  margin-left: 300px;
+  margin-top: -490px;
+}
+.flèche{
+  font-size: 35px;
+}
+.fleche2 {
+  margin-top: 37px;
+}
+.projet2{
+  width: 340px;
+  margin-left: 10px;
+  }
+}
+.nature {
+  width: 80%;
+  margin-left: 80px;
+  margin-top: -70px;
+}
+.flèche2{
+  font-size: 35px;
+  margin-left: 30px;
+}
 }
