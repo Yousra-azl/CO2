@@ -10,7 +10,6 @@ body {
   width: 100%;
 }
 #apropos-menuburger{
-  position: relative
   z-index:4 ;
 }
 
@@ -248,6 +247,9 @@ p-apropos {
   .cercle4{
     display: none;
   }
+  .apropos-footer{
+    margin-top: 20px;
+  }
   
 }
 @media screen and (max-width: 360px){
@@ -290,7 +292,6 @@ p-apropos {
   width: 340px;
   margin-left: 10px;
   }
-}
 .nature {
   width: 80%;
   margin-left: 80px;
