@@ -124,8 +124,8 @@
 .info{
     display: flex;
     flex-flow: column nowrap;
-    width: 88.5%;
-    padding-left: 3.5%;
+    width: 90%;
+    padding-left: 1%;
     font-family: "Roboto regular", sans-serif;
     font-size: 120%;
     word-spacing: normal;
@@ -153,7 +153,7 @@ textarea{
     
 }
 #envoie{
-    width: 25%;
+    width: 30%;
     background: linear-gradient(#B5D653,#019961) ;
     color: white;
     border-radius: 44px 45px 53px 60px / 40px 43px 44px 45px;
@@ -170,7 +170,7 @@ textarea{
     z-index: -1;
     position: fixed;
     left: 22%;
-    top: 11%;
+    top: 13%;
 }
 .algue{
     width: 13%;
@@ -184,7 +184,7 @@ textarea{
     width: 13%;
     z-index: -1;
     position: fixed;
-    right: 21.5%;
+    right: 16%;
     top: 47%;
     transform: rotate(15deg);
 }
@@ -204,7 +204,7 @@ textarea{
     margin-left: 400px ;
     position: absolute;
     top: 9%;
-    right: 21%;
+    right: 17%;
 }
 .rond2{
     width: 7em;
@@ -212,8 +212,8 @@ textarea{
     border-radius: 50%;
     border: 1.2em solid #019961;
     position: absolute;
-    top: 11%;
-    right: 25%;
+    top: 13%;
+    right: 21%;
 }
 .rond3{
     width: 2em;
@@ -223,8 +223,8 @@ textarea{
     margin-left: 500px ;
     margin-top: -350px;
     position: absolute;
-    top: 50%;
-    right: 20.5%;
+    top: 55%;
+    right: 16%;
 }
 /*uniquement visible en version mobile et tablette*/
 .prenom__tel{
@@ -254,6 +254,7 @@ textarea{
     }
     .fieldset__contact{
         margin: 0;
+        height: 80%;
 
     }
  
@@ -264,7 +265,7 @@ textarea{
     
     }
     #email{
-        padding-top: 2%;
+        
         width: 94%;
       
     }
@@ -272,14 +273,14 @@ textarea{
        width: 100%;
     }
     #tel{
-        padding-top: 2%;
+        
         width: 94%;
     }
     .tel{
         width: 100%;
     }
     #nom{
-        padding-top: 2%;
+        
         width: 100%;
     }
     .nom{
@@ -287,7 +288,7 @@ textarea{
 
     }
     #prenom{
-        padding-top: 2%;
+        
         width: 100%;
         
     }
